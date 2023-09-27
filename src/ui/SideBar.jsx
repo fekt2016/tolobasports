@@ -1,10 +1,10 @@
 /* eslint react/prop-types: 0 */
 import styled, { css } from 'styled-components'
 import { HiXMark } from 'react-icons/hi2'
-import ButtonIcon from '../ui/ButtonIcon'
 import { NavLink } from 'react-router-dom'
 import Modal from '../ui/Modal'
 import NewsLetter from '../features/newsletter/NewsLetter'
+import ButtonIcon from './ButtonIcon'
 
 const StyledSideBar = styled.div`
   background-color: var(--color-primary-0);
@@ -36,7 +36,6 @@ const StyledNav = styled.nav`
 const BtnIcon = styled.li`
   padding: 1rem 2rem;
   list-style: none;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -49,12 +48,17 @@ const MenuList = styled.ul`
   align-items: start;
   padding: 2rem;
 `
+
+const style = {
+  fontSize: '30px',
+  zIndex: 5,
+}
 function Sidebar({ setIsOpen, type }) {
   return (
     <StyledSideBar type={type}>
       <BtnIcon>
-        <ButtonIcon onClick={() => setIsOpen(false)}>
-          <HiXMark />
+        <ButtonIcon>
+          <HiXMark style={style} onClick={() => setIsOpen(false)} />
         </ButtonIcon>
       </BtnIcon>
       <StyledNav>
