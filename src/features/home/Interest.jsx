@@ -69,22 +69,22 @@ const StyledCard = styled.figure`
   ${(props) =>
     props.pics === 'aboutus' &&
     css`
-      background-image: url('../../../public/images/pc61.jpeg');
+      background-image: url('../../../images/pc61.jpeg');
     `}
   ${(props) =>
     props.pics === 'residential' &&
     css`
-      background-image: url('../../../public/images/pc34.jpeg');
+      background-image: url('../../../images/pc34.jpeg');
     `}
   ${(props) =>
     props.pics === 'euro' &&
     css`
-      background-image: url('../../../public/images/pc20.jpeg');
+      background-image: url('../../../images/pc20.jpeg');
     `}
   ${(props) =>
     props.pics === 'coach' &&
     css`
-      background-image: url('../../../public/images/pc19.jpeg');
+      background-image: url('../../../images/pc19.jpeg');
     `}
 
 `
