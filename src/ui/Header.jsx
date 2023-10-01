@@ -15,17 +15,17 @@ const StyledHeader = styled.header`
   ${(props) =>
     props.images === 'contact' &&
     css`
-      background-image: url('../../../pc6.jpg');
+      background-image: url('../../public/images/pc110.jpeg');
     `}
   ${(props) =>
     props.images === 'about' &&
     css`
-      background-image: url('../../../pc7.jpg');
+      background-image: url('../../public/images/pc120.jpeg');
     `}
   ${(props) =>
     props.images === 'faq' &&
     css`
-      background-image: url('../../../pc4.jpg');
+      background-image: url('../../public/images/pc141.jpeg');
     `}
   ${(props) =>
     props.images === 'scout' &&
