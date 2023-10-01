@@ -1,6 +1,6 @@
 /* eslint react/prop-types: 0*/
 import styled, { css } from 'styled-components'
-import { devicesMax } from '../styles/BreakPoint'
+// import { devicesMax } from '../styles/BreakPoint'
 
 const StyledSection = styled.section`
 margin-bottom: 8rem;
@@ -12,13 +12,9 @@ margin-bottom: 8rem;
     `}
 
  ${(props) =>
-   props.type === 'about' &&
+   props.type === 'padd' &&
    css`
-     /* padding: 4rem; */
-
-     /* @media ${devicesMax.lg} {
-       padding: 2rem;
-     } */
+     padding: 8rem;
    `}
   ${(props) =>
     props.type === 'touch' &&
@@ -30,6 +26,29 @@ margin-bottom: 8rem;
       css`
         padding: 4rem;
       `}
+      ${(props) =>
+        props.type === 'part' &&
+        css`
+          padding: 4rem;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.7),
+              rgba(0, 0, 0, 0.7)
+            ),
+            url('../../public/pc38.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          position: relative;
+        `}
+        ${(props) =>
+          props.type === 'parts' &&
+          css`
+            background-color: var(--color-white-900);
+            margin: 0 4rem;
+            display: flex;
+            background-color: ;
+          `}
 `
 function Section({ children, type }) {
   return <StyledSection type={type}>{children}</StyledSection>

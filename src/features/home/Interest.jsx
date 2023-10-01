@@ -121,7 +121,9 @@ function Interest() {
         <StyledCard pics="aboutus">
           <StyledBox>
             <H2>About MTLO</H2>
-            <Button pros="interest">VIEW MORE</Button>
+            <Button pros="interest">
+              <NavLink to="/aboutus">VIEW MORE</NavLink>
+            </Button>
           </StyledBox>
         </StyledCard>
         <StyledCard pics="residential">
@@ -135,13 +137,17 @@ function Interest() {
         <StyledCard pics="euro">
           <StyledBox>
             <H2>EUROPEAN PROGRAMMES</H2>
-            <Button pros="interest">VIEW MORE</Button>
+            <Button pros="interest">
+              <NavLink to="/programmes">VIEW MORE</NavLink>
+            </Button>
           </StyledBox>
         </StyledCard>
         <StyledCard pics="coach">
           <StyledBox>
             <H2>COACH EDUCATION</H2>
-            <Button pros="interest">VIEW MORE</Button>
+            <Button pros="interest">
+              <NavLink to="/trainer">VIEW MORE</NavLink>
+            </Button>
           </StyledBox>
         </StyledCard>
       </StyledBody>

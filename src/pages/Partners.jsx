@@ -1,5 +1,13 @@
+import PartContent from '../features/partners/PartContent'
+import Header from '../ui/Header'
+
 function Partners() {
-  return <div>partners with us</div>
+  return (
+    <>
+      <Header images="part" />
+      <PartContent />
+    </>
+  )
 }
 
 export default Partners

@@ -13,6 +13,8 @@ import Mentoring from './pages/Mentoring'
 import Testimonial from './pages/Testimonial'
 import Partners from './pages/Partners'
 import Blog from './pages/Blog'
+import Programmes from './pages/Programmes'
+import Trainer from './pages/Trainer'
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
             <Route path="blog" element={<Blog />} />
             <Route path="testimonial" element={<Testimonial />} />
             <Route path="image-gallery" element={<Gallery />} />
+            <Route path="programmes" element={<Programmes />} />
+            <Route path="trainer" element={<Trainer />} />
           </Route>
         </Routes>
       </BrowserRouter>

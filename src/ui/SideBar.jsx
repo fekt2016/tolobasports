@@ -12,7 +12,7 @@ const StyledSideBar = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 500;
+  z-index: 5000;
   width: 0;
   opacity: 0;
   visibility: hidden;

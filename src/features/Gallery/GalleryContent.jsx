@@ -18,32 +18,37 @@ const Images = styled.div`
 
 const Img = styled.img`
   border: 2px solid var(--color-primary-0);
-  transition: all 0.3s;
   width: 100%;
-  height: 144px;
+  height: 254px;
+
+  transition: all 0.3s;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 `
 function GalleryContent() {
   return (
     <Images>
-      <Img src="../../../pic1.jpeg" atl="pc1" />
-      <Img src="../../../pc3.jpg" atl="pc9" />
-      <Img src="../../../pc10.jpg" atl="pc8" />
-      <Img src="../../../pc11.jpg" atl="pc9" />
-      <Img src="../../../pc12.jpg" atl="pc6" />
-      <Img src="../../../pc13.jpg" atl="pc4" />
-      <Img src="../../../pc14.jpg" atl="pc5" />
-      <Img src="../../../pc15.jpg" atl="pc3" />
-      <Img src="../../../pc16.jpg" atl="pc1" />
-      <Img src="../../../pc17.jpeg" atl="pc9" />
-      <Img src="../../../pc18.jpeg" atl="pc8" />
-      <Img src="../../../pc19.jpeg" atl="pc9" />
-      <Img src="../../../pc21.jpeg" atl="pc6" />
-      <Img src="../../../pc22.jpeg" atl="pc4" />
-      <Img src="../../../pc23.jpg" atl="pc5" />
-      <Img src="../../../pc24.jpg" atl="pc3" />
+      <Img src="../../../images/pc1.jpeg" atl="pc1" />
+      <Img src="../../../images/pc2.jpeg" atl="pc1" />
+      <Img src="../../../images/pc3.jpeg" atl="pc1" />
+      <Img src="../../../images/pc4.jpeg" atl="pc1" />
+      <Img src="../../../images/pc5.jpeg" atl="pc1" />
+      <Img src="../../../images/pc6.jpeg" atl="pc1" />
+      <Img src="../../../images/pc7.jpeg" atl="pc1" />
+      <Img src="../../../images/pc8.jpeg" atl="pc1" />
+      <Img src="../../../images/pc9.jpeg" atl="pc1" />
+      <Img src="../../../images/pc10.jpeg" atl="pc1" />
+      <Img src="../../../images/pc11.jpeg" atl="pc1" />
+      <Img src="../../../images/pc12.jpeg" atl="pc1" />
+      <Img src="../../../images/pc13.jpeg" atl="pc1" />
+      <Img src="../../../images/pc14.jpeg" atl="pc1" />
+      <Img src="../../../images/pc15.jpeg" atl="pc1" />
+      <Img src="../../../images/pc16.jpeg" atl="pc1" />
+      <Img src="../../../images/pc17.jpeg" atl="pc1" />
+      <Img src="../../../images/pc18.jpeg" atl="pc1" />
+      <Img src="../../../images/pc19.jpeg" atl="pc1" />
+      <Img src="../../../images/pc20.jpeg" atl="pc1" />
     </Images>
   )
 }

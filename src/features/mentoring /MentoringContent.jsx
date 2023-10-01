@@ -49,15 +49,15 @@ function MentoringContent() {
           <StyledText>
             <P>
               The right mentoring programs have been known to help young
-              student-athletes’ mature at both mental as well as physical level.
-              This maturity certainly changes the way the student-athletes’
-              approach their work, their attitude and mannerisms they adopt to
-              in their life. We at Eric Benny Sports Management (EBSM) assure
-              that student-athletes’ not only learn the best football practices
-              but will also learn what it takes to be the best in the crowd. We
-              mentor every student-athlete enrolled with us to work towards
-              their unique goals with their strengths and help them eliminate
-              their areas of weaknesses.
+              student-athletes&apos; mature at both mental as well as physical
+              level. This maturity certainly changes the way the
+              student-athletes&apos; approach their work, their attitude and
+              mannerisms they adopt to in their life. We at Eric Benny Sports
+              Management (EBSM) assure that student-athletes&apos; not only
+              learn the best football practices but will also learn what it
+              takes to be the best in the crowd. We mentor every student-athlete
+              enrolled with us to work towards their unique goals with their
+              strengths and help them eliminate their areas of weaknesses.
             </P>
           </StyledText>
           <ImgBox>

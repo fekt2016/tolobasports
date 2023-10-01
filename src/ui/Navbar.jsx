@@ -6,9 +6,9 @@ import {
 import styled from 'styled-components'
 
 import { NavLink } from 'react-router-dom'
-import Sidebar from './sidebar'
 import { useState } from 'react'
 import { devicesMax } from '../styles/BreakPoint'
+import Sidebar from './SideBar'
 
 const StyledNav = styled.nav`
   background-color: var(--color-primary-0);

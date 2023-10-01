@@ -9,6 +9,7 @@ const StyledHeader = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
 
   ${(props) =>
@@ -36,9 +37,19 @@ const StyledHeader = styled.header`
       css`
         background-image: url('../../../pc10.jpg');
       `}
+      ${(props) =>
+        props.images === 'part' &&
+        css`
+          background-image: url('../../../pc11.jpg');
+        `}
+        ${(props) =>
+          props.images === 'test' &&
+          css`
+            background-image: url('../../../pc15.jpg');
+          `}
 `
-function Header({ images }) {
-  return <StyledHeader images={images} />
+function Header({ images, children }) {
+  return <StyledHeader images={images}>{children}</StyledHeader>
 }
 
 export default Header

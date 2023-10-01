@@ -7,6 +7,7 @@ import Button from '../../ui/Button'
 import { devicesMax } from '../../styles/BreakPoint'
 import { NavLink } from 'react-router-dom'
 import YoutubeEmbed from '../../ui/YoutubeEmbed'
+import Img from '../../ui/Img'
 
 const AboutContent = styled.div`
   width: 100%;
@@ -63,10 +64,10 @@ const Image = styled.div`
     height: 40rem;
   }
 `
-const Img = styled.img`
-  height: 100%;
-  width: 100%;
-`
+// const Img = styled.img`
+//   height: 100%;
+//   width: 100%;
+// `
 
 const ContentDetail = styled.div`
   width: 65%;
@@ -180,7 +181,7 @@ function AboutDetail() {
         <AboutContent>
           <ImgBox>
             <Image>
-              <Img src="../../../pc8.jpg" />
+              <Img src="../../../pc8.jpg" alt="pc8" />
             </Image>
             <Image>
               <Img src="../../../pc9.jpg" />
@@ -236,16 +237,16 @@ function AboutDetail() {
         </Row>
         <Team>
           <StyledPer>
-            <Img src="../../../pc17.jpeg" />
+            <Img src="../../../pc17.jpeg" alt="pc17" />
           </StyledPer>
           <StyledPer>
-            <Img src="../../../pc18.jpeg" />
+            <Img src="../../../pc18.jpeg" alt="pc18" />
           </StyledPer>
           <StyledPer>
-            <Img src="../../../pc22.jpeg" />
+            <Img src="../../../pc22.jpeg" alt="pc22" />
           </StyledPer>
           <StyledPer>
-            <Img src="../../../pc21.jpeg" />
+            <Img src="../../../pc21.jpeg" alt="pc21" />
           </StyledPer>
         </Team>
       </Section>

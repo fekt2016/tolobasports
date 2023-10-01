@@ -1,5 +1,11 @@
+import TestContent from '../features/testimonials/TestContent'
+
 function Testimonial() {
-  return <div>testimonial</div>
+  return (
+    <>
+      <TestContent />
+    </>
+  )
 }
 
 export default Testimonial

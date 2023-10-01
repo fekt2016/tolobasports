@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const Underline = styled.div`
   width: 140px;
@@ -8,5 +8,12 @@ const Underline = styled.div`
   margin-right: auto;
   margin-left: auto;
   border-radius: 42%;
+
+  ${(props) =>
+    props.cols === 'col' &&
+    css`
+      background-color: var(--color-white-900);
+      margin-bottom: 2rem;
+    `}
 `
 export default Underline
