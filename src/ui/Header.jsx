@@ -15,38 +15,38 @@ const StyledHeader = styled.header`
   ${(props) =>
     props.images === 'contact' &&
     css`
-      background-image: url('../../public/images/pc110.jpeg');
+      background-image: url('../../images/pc110.jpeg');
     `}
   ${(props) =>
     props.images === 'about' &&
     css`
-      background-image: url('../../public/images/pc120.jpeg');
+      background-image: url('../../images/pc120.jpeg');
     `}
   ${(props) =>
     props.images === 'faq' &&
     css`
-      background-image: url('../../public/images/pc141.jpeg');
+      background-image: url('../../images/pc141.jpeg');
     `}
   ${(props) =>
     props.images === 'scout' &&
     css`
       background-image: url('../../../pc37.jpg');
     `}
-    ${(props) =>
-      props.images === 'mentor' &&
-      css`
-        background-image: url('../../../pc10.jpg');
-      `}
-      ${(props) =>
-        props.images === 'part' &&
-        css`
-          background-image: url('../../../pc11.jpg');
-        `}
-        ${(props) =>
-          props.images === 'test' &&
-          css`
-            background-image: url('../../../pc15.jpg');
-          `}
+  ${(props) =>
+    props.images === 'mentor' &&
+    css`
+      background-image: url('../../../pc10.jpg');
+    `}
+  ${(props) =>
+    props.images === 'part' &&
+    css`
+      background-image: url('../../../pc11.jpg');
+    `}
+  ${(props) =>
+    props.images === 'test' &&
+    css`
+      background-image: url('../../../pc15.jpg');
+    `}
 `
 function Header({ images, children }) {
   return <StyledHeader images={images}>{children}</StyledHeader>

@@ -11,7 +11,7 @@ const StyledWel = styled.div`
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.9) 90%
     ),
-    url('../../..images/pc60.jpeg');
+    url('../../../images/pc60.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

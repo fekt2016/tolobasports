@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 import { devicesMax } from '../../styles/BreakPoint'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { images } from './gallery'
+import { useState } from 'react'
+import GalleryModel from './GalleryModel'
 
 const Images = styled.div`
   display: grid;
@@ -16,40 +20,63 @@ const Images = styled.div`
   }
 `
 
-const Img = styled.img`
+const Img = styled(LazyLoadImage)`
   border: 2px solid var(--color-primary-0);
   width: 100%;
   height: 254px;
+  cursor: pointer;
 
   transition: all 0.3s;
   &:hover {
-    transform: scale(1.5);
+    border: 5px solid var(--color-primary-0);
   }
 `
 function GalleryContent() {
+  const [clickImage, setClickImage] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(null)
+
+  function handleClick(image, index) {
+    setCurrentIndex(index)
+    setClickImage(image.src)
+  }
+  function handleRotationRight() {
+    const totalLength = images.length
+
+    if (currentIndex + 1 >= totalLength) {
+      setCurrentIndex(0)
+      const newUrl = images[0].src
+      setClickImage(newUrl)
+      return
+    }
+    const newIndex = currentIndex + 1
+
+    const newUrl = images.filter((item) => {
+      return images.indexOf(item === newIndex)
+    })
+
+    const newItem = newUrl[newIndex].src
+    setClickImage(newItem)
+    setCurrentIndex(newIndex)
+  }
   return (
-    <Images>
-      <Img src="../../../images/pc1.jpeg" atl="pc1" />
-      <Img src="../../../images/pc2.jpeg" atl="pc1" />
-      <Img src="../../../images/pc3.jpeg" atl="pc1" />
-      <Img src="../../../images/pc4.jpeg" atl="pc1" />
-      <Img src="../../../images/pc5.jpeg" atl="pc1" />
-      <Img src="../../../images/pc6.jpeg" atl="pc1" />
-      <Img src="../../../images/pc7.jpeg" atl="pc1" />
-      <Img src="../../../images/pc8.jpeg" atl="pc1" />
-      <Img src="../../../images/pc9.jpeg" atl="pc1" />
-      <Img src="../../../images/pc10.jpeg" atl="pc1" />
-      <Img src="../../../images/pc11.jpeg" atl="pc1" />
-      <Img src="../../../images/pc12.jpeg" atl="pc1" />
-      <Img src="../../../images/pc13.jpeg" atl="pc1" />
-      <Img src="../../../images/pc14.jpeg" atl="pc1" />
-      <Img src="../../../images/pc15.jpeg" atl="pc1" />
-      <Img src="../../../images/pc16.jpeg" atl="pc1" />
-      <Img src="../../../images/pc17.jpeg" atl="pc1" />
-      <Img src="../../../images/pc18.jpeg" atl="pc1" />
-      <Img src="../../../images/pc19.jpeg" atl="pc1" />
-      <Img src="../../../images/pc20.jpeg" atl="pc1" />
-    </Images>
+    <>
+      <Images>
+        {images.map((image, index) => (
+          <Img
+            key={image.alt}
+            src={image.src}
+            onClick={() => handleClick(image, index)}
+          />
+        ))}
+      </Images>
+      {clickImage && (
+        <GalleryModel
+          clickImage={clickImage}
+          handleRotationRight={handleRotationRight}
+          setClickImage={setClickImage}
+        />
+      )}
+    </>
   )
 }
 

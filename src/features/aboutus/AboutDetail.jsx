@@ -181,7 +181,7 @@ function AboutDetail() {
         <AboutContent>
           <ImgBox>
             <Image>
-              <Img src="../../../images/pc100.jpeg" alt="pc8" />
+              <Img src="../../../images/pc147.jpeg" alt="pc8" />
             </Image>
             <Image>
               <Img src="../../../images/pc110.jpeg" />
