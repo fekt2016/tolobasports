@@ -2,6 +2,7 @@
 
 import { HiOutlinePlay, HiOutlineXMark } from 'react-icons/hi2'
 import styled from 'styled-components'
+import { devicesMax } from '../../styles/BreakPoint'
 
 const Overlay = styled.div`
   width: 100vw;
@@ -35,6 +36,16 @@ const RighContainer = styled.div`
   align-items: center;
   padding: 0 2rem;
   box-shadow: var(--shadow-sm);
+
+  @media ${devicesMax.dm} {
+    right: 10rem;
+  }
+  @media ${devicesMax.dm} {
+    right: 5rem;
+  }
+  @media ${devicesMax.sm} {
+    right: 1rem;
+  }
 `
 const StyledIconRight = styled(HiOutlinePlay)`
   font-size: 40px;
@@ -65,6 +76,10 @@ const StyledSpan = styled.span`
   align-items: center;
   .something {
     z-index: 500000;
+  }
+
+  @media ${devicesMax.sm} {
+    right: 50px;
   }
 `
 

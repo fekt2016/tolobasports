@@ -10,7 +10,7 @@ const Images = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
 
-  gap: 10px;
+  gap: 20px;
 
   @media ${devicesMax.md} {
     grid-template-columns: 1fr 1fr;

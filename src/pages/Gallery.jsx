@@ -8,7 +8,7 @@ function Gallery() {
   return (
     <Section type="gallery">
       <Row>
-        <Heading>images gallery</Heading>
+        <Heading as="h2">Images Gallery</Heading>
         <Underline />
       </Row>
       <GalleryContent />
