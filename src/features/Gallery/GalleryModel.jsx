@@ -24,6 +24,10 @@ const Overlay = styled.div`
 const Img = styled.img`
   width: 50%;
   height: 70%;
+
+  @media ${devicesMax.sm} {
+    width: 80%;
+  }
 `
 const RighContainer = styled.div`
   position: absolute;
