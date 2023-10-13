@@ -7,7 +7,7 @@ const StyledWel = styled.div`
   width: 100vw;
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.7)),
-    url('../../../public/pc10.jpg');
+    url('../../../pc10.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
