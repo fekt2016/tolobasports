@@ -13,8 +13,11 @@ const StyledWel = styled.div`
   background-size: cover;
 
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
+
+  @media ${devicesMax.lg} {
+    flex-direction: column;
+  }
 `
 const StyledBox = styled.div`
   flex: 1;
@@ -23,29 +26,31 @@ const StyledBox = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* @media ${devicesMax.md} {
-  } */
-  padding-left: 10rem;
+
+  padding: 2rem;
 `
 const StyledP = styled.p`
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-
+  @media ${devicesMax.lg} {
+    font-size: 2.5rem;
+  }
   @media ${devicesMax.md} {
     font-size: 2rem;
   }
 `
 const ImgBox = styled.div`
-  height: 100%;
-  position: relative;
-  flex: 1;
+  /* /* height: 100%; */
+  /* position: relative; */
+  /* flex: 1;
   align-self: self-end;
+  background-color: blue;
+  padding: 1rem;  */
 `
 const Img = styled.img`
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  height: 40rem;
+  width: 60rem;
 `
 function Welcome() {
   return (

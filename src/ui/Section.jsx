@@ -9,11 +9,7 @@ margin-bottom: 8rem;
 @media ${devicesMax.md}{
   margin-bottom: 4rem;
 }
-  ${(props) =>
-    props.type === 'welcome' &&
-    css`
-      height: 60rem;
-    `}
+  ${(props) => props.type === 'welcome' && css``}
 
  ${(props) =>
    props.type === 'padd' &&
