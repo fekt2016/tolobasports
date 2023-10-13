@@ -15,7 +15,7 @@ const ScoutContent = styled.div`
 
   @media ${devicesMax.md} {
     flex-direction: column;
-    padding: 0 4rem;
+    padding: 0 2rem;
   }
 `
 const ScoutDetail = styled.div`
@@ -30,7 +30,7 @@ const ScoutText = styled.div`
   color: var(--color-grey-500);
 
   @media ${devicesMax.md} {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 `
 const Img = styled.img`
@@ -41,6 +41,10 @@ const StyledP = styled.p`
   width: 100%;
   font-size: 1.5rem;
   text-align: justify;
+
+  @media ${devicesMax.dm} {
+    font-size: 1.2rem;
+  }
 `
 
 const StyledCheck = styled.div`
@@ -55,6 +59,11 @@ const StyledCheck = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media ${devicesMax.md} {
+    margin-bottom: 4rem;
+    padding: 2rem;
+  }
 `
 const H4 = styled.h4`
   color: var(--color-white-900);

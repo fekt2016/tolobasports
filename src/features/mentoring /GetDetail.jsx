@@ -1,6 +1,7 @@
 /*eslint react/prop-types: 0*/
 import styled from 'styled-components'
 import { getOptions } from './getData'
+import { devicesMax } from '../../styles/BreakPoint'
 
 const DetailImgBox = styled.div`
   flex-basis: 40%;
@@ -16,6 +17,10 @@ const StyledGetDetail = styled.div`
 
   display: flex;
   gap: 15px;
+
+  @media ${devicesMax.dm} {
+    flex-direction: column;
+  }
 `
 const P = styled.p`
   font-size: 1.2rem;

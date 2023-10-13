@@ -9,12 +9,12 @@ import { devicesMax } from '../../styles/BreakPoint'
 
 const StyledContent = styled.div`
   padding: 4rem;
-
   display: flex;
   gap: 20px;
 
   @media ${devicesMax.md} {
     flex-direction: column;
+    padding: 2rem;
   }
 `
 const StyledText = styled.div`
@@ -26,6 +26,10 @@ const StyledText = styled.div`
 `
 const P = styled.p`
   text-align: justify;
+
+  @media ${devicesMax.md} {
+    font-size: 1.2rem;
+  }
 `
 const ImgBox = styled.div`
   height: 300px;

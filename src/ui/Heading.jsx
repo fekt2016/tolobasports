@@ -9,7 +9,7 @@ color: var(--color-primary-200);
   ${(props) =>
     props.as === 'h1' &&
     css`
-      font-size: 7rem;
+      font-size: 5rem;
       font-weight: 600;
       font-family: 'Roboto';
     `}

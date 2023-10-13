@@ -1,10 +1,14 @@
 /* eslint react/prop-types: 0*/
 import styled, { css } from 'styled-components'
+import { devicesMax } from '../styles/BreakPoint'
 // import { devicesMax } from '../styles/BreakPoint'
 
 const StyledSection = styled.section`
 margin-bottom: 8rem;
 
+@media ${devicesMax.md}{
+  margin-bottom: 4rem;
+}
   ${(props) =>
     props.type === 'welcome' &&
     css`

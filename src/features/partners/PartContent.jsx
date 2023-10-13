@@ -17,6 +17,9 @@ const StyledPart = styled.div`
   @media ${devicesMax.lg} {
     flex-direction: column;
   }
+  @media ${devicesMax.md} {
+    padding: 2rem;
+  }
 `
 const ContentBox = styled.div`
   flex-basis: 48%;
@@ -32,6 +35,10 @@ const TextBox = styled.div`
   background-color: transparent;
   width: 70%;
   margin: 0 auto;
+
+  @media ${devicesMax.dm} {
+    width: 100%;
+  }
 `
 
 const StyledList = styled.ul``
@@ -41,6 +48,9 @@ const StyledItem = styled.li`
   border: 1px solid var(--color-grey-300);
   &:not(:last-child) {
     margin-bottom: 2rem;
+  }
+  @media ${devicesMax.dm} {
+    font-size: 1.2rem;
   }
 `
 const PartnerTran = keyframes`
@@ -78,6 +88,11 @@ const ImgScroll = styled.img`
   width: 200px;
   height: 15rem;
 `
+const P = styled.p`
+  @media ${devicesMax.dm} {
+    font-size: 1.2rem;
+  }
+`
 
 function PartContent() {
   return (
@@ -92,7 +107,7 @@ function PartContent() {
             <Img src="../../../pc31.jpg" alt="pc31" />
           </ContentBox>
           <ContentBox type="border">
-            <p>
+            <P>
               Eric Benny Sports Management (EBSM) is in the business of
               Consulting, Scouting and Mentoring of potential footballers so as
               to create an educated race of footballers and/or careers around
@@ -100,7 +115,7 @@ function PartContent() {
               Network and welcome individuals, proprietors and organizations who
               have a prior experience in corporate environment and passion
               towards sports to join us in our vision.
-            </p>
+            </P>
           </ContentBox>
         </StyledPart>
       </Section>
