@@ -58,7 +58,7 @@ function Welcome() {
   return (
     <StyledWel>
       <StyledBox>
-        <Heading as="h1">Toloba Sport consult</Heading>
+        <Heading as="h1">Toloba Sports consult</Heading>
         <StyledP>
           We prioritize Fostering talent, enhancing skills, and nurturing
           athletes to reach their full potential in the world of sports
