@@ -33,11 +33,13 @@ const StyledP = styled.p`
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+
   @media ${devicesMax.lg} {
     font-size: 2.5rem;
+    text-align: center;
   }
   @media ${devicesMax.md} {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 `
 const ImgBox = styled.div`

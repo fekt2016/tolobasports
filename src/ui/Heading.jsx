@@ -12,6 +12,9 @@ color: var(--color-primary-200);
       font-size: 5rem;
       font-weight: 600;
       font-family: 'Roboto';
+      @media ${devicesMax.sm} {
+        font-size: 3.5rem;
+      }
     `}
   ${(props) =>
     props.as === 'h2' &&
@@ -32,8 +35,6 @@ color: var(--color-primary-200);
           font-weight: 600;
           text-align: center;
         `}
-        @media ${devicesMax.md} {
-    font-size: 1.8rem
-  }
+
 `
 export default Heading

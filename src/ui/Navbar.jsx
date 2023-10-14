@@ -22,10 +22,10 @@ const StyledUl = styled.ul`
   padding-right: 15rem;
 
   @media ${devicesMax.md} {
-    padding-right: 10rem;
+    padding-right: 4rem;
   }
   @media ${devicesMax.sm} {
-    padding-right: 6rem;
+    padding-right: 1rem;
   }
 `
 const StyledLi = styled.li`
@@ -51,6 +51,12 @@ const StyledLi = styled.li`
 
   &:nth-child(1) {
     border-left: 1px solid var(--color-black-900);
+  }
+  @media ${devicesMax.md} {
+    font-size: 1.2rem;
+  }
+  @media ${devicesMax.sm} {
+    font-size: 1rem;
   }
 `
 const StyledNavLink = styled(NavLink)`

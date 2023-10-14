@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import NavBar from '../../ui/Navbar'
+import Logo from '../../ui/Logo'
 
 const StyledHeader = styled.header`
   display: flex;
@@ -31,6 +32,7 @@ const Img = styled.img`
 function Header() {
   return (
     <StyledHeader>
+      <Logo img="../../../mloogo.png" type="big" />
       <StyledSocial>
         <StyledLink>
           <Img src="../../facebook.png" />
