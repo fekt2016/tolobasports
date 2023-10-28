@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components'
 
 const Button = styled.button`
   font-size: 1.6rem;
-  background-color: var(--color-primary-0);
-  color: var(--color-black-900);
+  background-color: var(--color-secoundary);
+  color: var(--color-primary-0);
   border: none;
   padding: 0.8rem 1rem;
   box-shadow: var(--shadow-sm);
@@ -21,7 +21,7 @@ const Button = styled.button`
     props.pros === 'contact' &&
     css`
       &:hover {
-        background-color: var(--color-black-900);
+        background-color: var(--color-secoundary);
         color: var(--color-primary-0);
       }
     `}

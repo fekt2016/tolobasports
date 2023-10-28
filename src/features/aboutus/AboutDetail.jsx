@@ -118,27 +118,38 @@ const H6 = styled.h6`
 `
 
 const Team = styled.div`
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+
   gap: 20px;
   padding: 2rem;
 
+  @media ${devicesMax.lg} {
+    gap: 10px;
+  }
   @media ${devicesMax.md} {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 24rem);
+  }
+  @media ${devicesMax.sm} {
+    grid-template-columns: 1fr;
   }
 `
 const StyledPer = styled.div`
-  flex: 1;
   height: 20rem;
   border-radius: var(--border-radius-md);
   box-shadow: var(--shadow-sm);
-  overflow: hidden;
-  @media ${devicesMax.md} {
-    width: 70%;
-    margin: 0 auto;
-  }
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
 `
 const CareerDetail = styled.div`
   width: 80%;
@@ -170,6 +181,15 @@ const CareerP = styled.p`
     font-size: 1.1rem;
   }
 `
+const StyledBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+const StyledSpan = styled.span`
+  text-transform: capitalize;
+`
 function AboutDetail() {
   return (
     <>
@@ -181,10 +201,10 @@ function AboutDetail() {
         <AboutContent>
           <ImgBox>
             <Image>
-              <Img src="../../../images/pc147.jpeg" alt="pc8" />
+              <Img src="../../../2.png" alt="pc8" />
             </Image>
             <Image>
-              <Img src="../../../images/pc110.jpeg" />
+              <Img src="../../../musah4.jpeg" />
             </Image>
           </ImgBox>
           <ContentDetail>
@@ -223,10 +243,10 @@ function AboutDetail() {
         </AboutContent>
         <VideoContent>
           <Image>
-            <YoutubeEmbed embedId="JiRQjSPl1UM" />
+            <YoutubeEmbed embedId="R4WnMNK6zQ0" />
           </Image>
           <Image>
-            <YoutubeEmbed embedId="XUTouo2pG9Y" />
+            <YoutubeEmbed embedId="R4WnMNK6zQ0" />
           </Image>
         </VideoContent>
       </Section>
@@ -236,18 +256,48 @@ function AboutDetail() {
           <Underline />
         </Row>
         <Team>
-          <StyledPer>
-            <Img src="../../../pc17.jpeg" alt="pc17" />
-          </StyledPer>
-          <StyledPer>
-            <Img src="../../../pc18.jpeg" alt="pc18" />
-          </StyledPer>
-          <StyledPer>
-            <Img src="../../../pc22.jpeg" alt="pc22" />
-          </StyledPer>
-          <StyledPer>
-            <Img src="../../../pc21.jpeg" alt="pc21" />
-          </StyledPer>
+          <StyledBox>
+            <StyledPer>
+              <Img src="../../../staff1.jpeg" alt="pc17" />
+            </StyledPer>
+            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+            <StyledSpan>international</StyledSpan>
+          </StyledBox>
+          <StyledBox>
+            <StyledPer>
+              <Img src="../../../staff2.jpeg" alt="pc18" />
+            </StyledPer>
+            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+            <StyledSpan>international</StyledSpan>
+          </StyledBox>
+          <StyledBox>
+            <StyledPer>
+              <Img src="../../../staff3.jpeg" alt="pc22" />
+            </StyledPer>
+            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+            <StyledSpan>international</StyledSpan>
+          </StyledBox>
+          <StyledBox>
+            <StyledPer>
+              <Img src="../../../staff4.jpeg" alt="pc21" />
+            </StyledPer>
+            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+            <StyledSpan>international</StyledSpan>
+          </StyledBox>
+          <StyledBox>
+            <StyledPer>
+              <Img src="../../../staff4.jpeg" alt="pc21" />
+            </StyledPer>
+            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+            <StyledSpan>international</StyledSpan>
+          </StyledBox>
+          <StyledBox>
+            <StyledPer>
+              <Img src="../../../staff4.jpeg" alt="pc21" />
+            </StyledPer>
+            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+            <StyledSpan>international</StyledSpan>
+          </StyledBox>
         </Team>
       </Section>
       <Section>

@@ -7,7 +7,7 @@ import NewsLetter from '../features/newsletter/NewsLetter'
 import ButtonIcon from './ButtonIcon'
 
 const StyledSideBar = styled.div`
-  background-color: var(--color-primary-0);
+  background-color: var(--color-secoundary);
   height: 100vh;
   position: fixed;
   top: 0;
@@ -39,6 +39,7 @@ const BtnIcon = styled.li`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: var(--color-primary-0);
 `
 const MenuList = styled.ul`
   height: 100%;

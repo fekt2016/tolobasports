@@ -9,11 +9,12 @@ import { useState } from 'react'
 
 const FaqDetail = styled.div`
   padding: 2rem;
+  color: var(--color-white);
 `
 const ContentBox = styled.div`
   padding: 4rem;
   border: 1px solid var(--color-primary-0);
-  border-top: 5px solid var(--color-black-900);
+  border-top: 5px solid var(--color-secoundary);
 `
 const StyleQues = styled.div`
   background-color: var(--color-primary-0);

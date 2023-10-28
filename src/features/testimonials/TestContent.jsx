@@ -4,9 +4,10 @@ import Row from '../../ui/Row'
 import Heading from '../../ui/Heading'
 import UnderLine from '../../ui/UnderLine'
 import styled from 'styled-components'
+import { devicesMax } from '../../styles/BreakPoint'
 
 const StyledTest = styled.div`
-  background-color: var(--color-white-900);
+  background-color: var(--color-white);
   position: absolute;
   bottom: 100px;
   right: 50px;
@@ -14,10 +15,20 @@ const StyledTest = styled.div`
   padding: 5rem;
   color: var(--color-primary-0);
   box-shadow: var(--shadow-lg);
+  @media ${devicesMax.md} {
+    padding: 3rem;
+    font-size: 40px;
+    bottom: 30px;
+    right: 40px;
+  }
 `
 const TestDetail = styled.div`
   display: flex;
   margin-bottom: 4rem;
+
+  @media ${devicesMax.md} {
+    flex-direction: column;
+  }
 `
 
 const ImgBox = styled.div`
@@ -34,6 +45,11 @@ const TextBox = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media ${devicesMax.md} {
+    flex: 2;
+    height: auto;
+  }
 `
 const TextBoxDetail = styled.div`
   display: flex;
@@ -41,14 +57,16 @@ const TextBoxDetail = styled.div`
   position: absolute;
   padding: 2rem;
   /* margin-right: 20rem; */
-  z-index: -1;
 
   left: -60px;
-  background-color: var(--color-white-900);
+  background-color: var(--color-white);
+
+  @media ${devicesMax.md} {
+    position: initial;
+  }
 `
 const P = styled.p`
   margin-bottom: 2rem;
-  z-index: -1;
 `
 function TestContent() {
   return (

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import Section from '../../ui/Section'
 import Form from '../../ui/Form'
 import Input from '../../ui/Input'
@@ -6,71 +6,131 @@ import Row from '../../ui/Row'
 import Heading from '../../ui/Heading'
 import Underline from '../../ui/UnderLine'
 import Button from '../../ui/Button'
-import Select from '../../ui/Select'
 import Textarea from '../../ui/Textarea'
-import { devicesMax } from '../../styles/BreakPoint'
+import emailjs from '@emailjs/browser'
+import SpinnerMini from '../../ui/SpinnerMini'
+import { useForm } from 'react-hook-form'
+import FormRow from '../../ui/FormRow'
+import { useState } from 'react'
+import { toast } from 'react-toastify'
 
-const FormRow = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-
-  @media ${devicesMax.md} {
-    flex-direction: column;
-  }
-  ${(props) =>
-    props.cols === 'col' &&
-    css`
-      flex-direction: column;
-    `}
-  ${(props) =>
-    props.cols === 'sub' &&
-    css`
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-    `}
+const Select = styled.select`
+  font-size: 1.4rem;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid
+    ${(props) =>
+      props.type === 'white'
+        ? 'var(--color-grey-100)'
+        : 'var(--color-grey-300)'};
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-grey-0);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
 `
 
 function ContactForm() {
+  const [isLoading, setIsLoading] = useState(false)
+
+  const { register, handleSubmit, formState, reset } = useForm()
+  const { errors } = formState
+  const notify = () => toast('Email sent')
+  const sendEmail = (formData) => {
+    setIsLoading(true)
+    emailjs
+      .send(
+        import.meta.env.VITE_YOUR_SERVICE_ID,
+        import.meta.env.VITE_YOUR_TEMPLATE_ID,
+        formData,
+        import.meta.env.VITE_YOUR_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          console.log(result)
+          notify()
+        },
+        (error) => {
+          console.log(error.text)
+        },
+      )
+    setIsLoading(false)
+    reset()
+  }
   return (
     <Section type="touch">
       <Row>
         <Heading as="h1">Get In Touch</Heading>
         <Underline />
       </Row>
-      <Form>
-        <FormRow>
-          <Input placeholder="Name" type="text" dist="col" />
-          <Input placeholder="Location" type="text" dist="col" />
+      <Form onSubmit={handleSubmit(sendEmail)}>
+        <FormRow label="Name" error={errors?.user_name?.message}>
+          <Input
+            placeholder="Name"
+            type="text"
+            dist="col"
+            name="user_name"
+            {...register('user_name', { required: 'Your name is required' })}
+          />
         </FormRow>
-        <FormRow cols="inline">
-          <Input placeholder="Email" type="text" dist="col" />
-          <Input placeholder="Phone" type="text" dist="col" />
+        <FormRow label="Lacation" error={errors?.user_location?.message}>
+          <Input
+            placeholder="Location"
+            type="text"
+            dist="col"
+            name="user_location"
+            {...register('user_location', {
+              required: 'Your location is required',
+            })}
+          />
         </FormRow>
-        <FormRow cols="col">
+        <FormRow label="Email Address" error={errors?.user_email?.message}>
+          <Input
+            placeholder="Email"
+            type="text"
+            dist="col"
+            name="user_email"
+            {...register('user_email', {
+              required: 'Your email address is required',
+            })}
+          />
+        </FormRow>
+        <FormRow label="Phone Number" error={errors?.user_phone?.message}>
+          <Input
+            placeholder="Phone"
+            type="text"
+            dist="col"
+            name="user_phone"
+            {...register('user_phone', { required: 'Your phone is required' })}
+          />
+        </FormRow>
+        <FormRow label="Interest" error={errors?.interest?.message}>
           <Select
-            options={[
-              { value: 'Choose Your Interest', label: 'Choose Your Interest' },
-              {
-                value: 'Residential FootBall School',
-                label: 'Residential FootBall School',
-              },
-              { value: 'Football Acadamy', label: 'Football Acadamy' },
-              { value: 'European Programmes', label: 'European Programmes' },
-              { value: 'Coach Education', label: 'Coach Education' },
-              { value: 'Partner With Us', label: 'Partner With Us' },
-              { value: 'Employment', label: 'Employment' },
-              { value: 'Mentoring', label: 'Mentoring' },
-              { value: 'Scouting', label: 'Scouting' },
-              { value: 'Others', label: 'Others' },
-            ]}
-          ></Select>
-          <Textarea placeholder="Your Message" type="textArea" />
+            name="interest"
+            {...register('interest', { required: 'select an interest field' })}
+          >
+            <option>Choose Your Interest</option>
+            <option>Residential FootBall School</option>
+            <option>Football Acadamy</option>
+            <option>European Programmes</option>
+            <option>Coach Education</option>
+            <option>Partner With Us</option>
+            <option>Employment</option>
+            <option>Mentoring</option>
+            <option>Scouting</option>
+            <option>Others</option>
+          </Select>
+        </FormRow>
+        <FormRow label="Message" error={errors?.message?.message}>
+          <Textarea
+            placeholder="Your Message"
+            type="textArea"
+            name="message"
+            {...register('message', { required: 'Add message' })}
+          />
         </FormRow>
         <FormRow cols="sub">
-          <Button>Submit</Button>
+          <Button type="submit" value="send message">
+            {isLoading ? <SpinnerMini /> : 'Submit'}
+          </Button>
         </FormRow>
       </Form>
     </Section>

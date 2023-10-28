@@ -23,7 +23,7 @@ const Heading = styled.h1`
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
-  color: var(--color-primary-0);
+
   @media ${devicesMax.md} {
     font-size: 2.5rem;
   }
@@ -69,12 +69,12 @@ const StyledCard = styled.figure`
   ${(props) =>
     props.pics === 'aboutus' &&
     css`
-      background-image: url('../../../images/pc61.jpeg');
+      background-image: url('../../../musah.jpeg');
     `}
   ${(props) =>
     props.pics === 'residential' &&
     css`
-      background-image: url('../../../images/pc34.jpeg');
+      background-image: url('../../../musah2.jpeg');
     `}
   ${(props) =>
     props.pics === 'euro' &&
@@ -84,7 +84,7 @@ const StyledCard = styled.figure`
   ${(props) =>
     props.pics === 'coach' &&
     css`
-      background-image: url('../../../images/pc19.jpeg');
+      background-image: url('../../../musah3.jpeg');
     `}
 
 `
@@ -101,7 +101,7 @@ const StyledBox = styled.div`
 
 const H2 = styled.h2`
   font-size: 1.6rem;
-  color: var(--color-white-900);
+  color: var(--color-secoundary);
   position: absolute;
   bottom: 1px;
   left: 5px;

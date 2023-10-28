@@ -7,9 +7,16 @@ const StyledLogo = styled.div`
   height: inherit;
   align-items: center;
   position: absolute;
-  top: 1rem;
-  left: 50px;
-  @media ${devicesMax.md} {
+  /* top: 1rem; */
+  /* left: 50px; */
+  ${(props) =>
+    props.position === 'header' &&
+    css`
+      left: 50px;
+    `}
+
+
+   @media ${devicesMax.md} {
     left: 10px;
   }
   @media ${devicesMax.sm} {
@@ -33,10 +40,10 @@ const Img = styled.img`
     `}
 `
 
-function Logo({ type, img }) {
+function Logo({ type, img, position }) {
   return (
     <StyledLogo>
-      <Img src={img} alt="Logo" type={type} />
+      <Img src={img} alt="Logo" type={type} postion={position} />
     </StyledLogo>
   )
 }

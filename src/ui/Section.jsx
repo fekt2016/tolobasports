@@ -1,7 +1,6 @@
 /* eslint react/prop-types: 0*/
 import styled, { css } from 'styled-components'
 import { devicesMax } from '../styles/BreakPoint'
-// import { devicesMax } from '../styles/BreakPoint'
 
 const StyledSection = styled.section`
 margin-bottom: 8rem;
@@ -15,6 +14,9 @@ margin-bottom: 8rem;
    props.type === 'padd' &&
    css`
      padding: 8rem;
+     @media ${devicesMax.md} {
+       padding: 2rem;
+     }
    `}
   ${(props) =>
     props.type === 'touch' &&

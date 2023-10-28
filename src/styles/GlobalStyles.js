@@ -1,15 +1,16 @@
 import { createGlobalStyle } from "styled-components";
+import { devicesMax } from "./BreakPoint";
 
 const GlobalStyles = createGlobalStyle`:root {
-  --color-primary-0:#B8D432;
+  --color-primary-0: #2c3343;
   --color-primary-50:#D0E378;
   --color-primary-200:#7E921F;
 
 
-
-  --color-black-900:#000;
-  --color-white-900:#fff;
-
+--color-black-900: green;
+  --color-secoundary:#ea2642;
+  --color-white:#fff;
+  --color-red-700: #ff4633;
 
 
   --color-grey-50: #f9fafb;
@@ -22,6 +23,9 @@ const GlobalStyles = createGlobalStyle`:root {
   --color-grey-700: #374151;
   --color-grey-800: #1f2937;
   --color-grey-900: #111827;
+
+
+
 
 
   --border-radius-tiny: 3px;
@@ -46,6 +50,10 @@ const GlobalStyles = createGlobalStyle`:root {
 }
 html {
   font-size: 62.5%;
+
+  @media ${devicesMax.md}{
+    font-size: 58%;
+  }
 }
 body {
   font-family: "Poppins", sans-serif;

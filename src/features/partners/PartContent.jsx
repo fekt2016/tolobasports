@@ -12,7 +12,8 @@ const StyledPart = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  background-color: aliceblue;
+
+  /* background-color: aliceblue; */
 
   @media ${devicesMax.lg} {
     flex-direction: column;
@@ -43,7 +44,7 @@ const TextBox = styled.div`
 
 const StyledList = styled.ul``
 const StyledItem = styled.li`
-  color: var(--color-white-900);
+  color: var(--color-white);
   padding: 1rem;
   border: 1px solid var(--color-grey-300);
   &:not(:last-child) {

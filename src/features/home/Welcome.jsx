@@ -43,16 +43,11 @@ const StyledP = styled.p`
   }
 `
 const ImgBox = styled.div`
-  /* /* height: 100%; */
-  /* position: relative; */
-  /* flex: 1;
-  align-self: self-end;
-  background-color: blue;
-  padding: 1rem;  */
+  background-color: transparent;
 `
 const Img = styled.img`
   height: 40rem;
-  width: 60rem;
+  width: 65rem;
 `
 function Welcome() {
   return (

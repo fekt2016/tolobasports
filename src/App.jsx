@@ -1,5 +1,7 @@
 import GlobalStyles from './styles/GlobalStyles'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 import HomePage from './pages/HomePage'
 import AppLayout from './ui/AppLayout'
@@ -39,6 +41,23 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
+      {/* <Toaster
+        position="top-center"
+        gutter={12}
+        containerStyle={{ margin: '8px' }}
+        toastOptions={{
+          success: {
+            duration: 3000,
+          },
+          style: {
+            fontSize: '16px',
+            maxWidth: '500px',
+            backgroundColor: 'var(--color-grey-0)',
+            color: 'var(--color-grey-700)',
+          },
+        }}
+      /> */}
     </>
   )
 }

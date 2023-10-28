@@ -22,7 +22,7 @@ const StyledText = styled.div`
   flex: 1;
 
   border: 1px solid var(--color-primary-0);
-  border-top: 5px solid var(--color-black-900);
+  border-top: 5px solid var(--color-secoundary);
 `
 const P = styled.p`
   text-align: justify;

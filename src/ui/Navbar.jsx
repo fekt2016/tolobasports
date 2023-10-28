@@ -36,7 +36,8 @@ const StyledLi = styled.li`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-right: 1px solid var(--color-black-900);
+  border-right: 1px solid var(--color-secoundary);
+  color: var(--color-secoundary);
 
   & svg {
     width: 2.4rem;
@@ -45,12 +46,12 @@ const StyledLi = styled.li`
   }
 
   &:hover {
-    background-color: var(--color-black-900);
+    background-color: var(--color-secoundary);
     color: var(--color-white-900);
   }
 
   &:nth-child(1) {
-    border-left: 1px solid var(--color-black-900);
+    border-left: 1px solid var(--color-secoundary);
   }
   @media ${devicesMax.md} {
     font-size: 1.2rem;

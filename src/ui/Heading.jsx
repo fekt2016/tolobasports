@@ -4,8 +4,8 @@ import { devicesMax } from '../styles/BreakPoint'
 const Heading = styled.h1`
 
 font-family: 'Lato';
+color: var(--color-secoundary);
 
-color: var(--color-primary-200);
   ${(props) =>
     props.as === 'h1' &&
     css`
@@ -31,7 +31,7 @@ color: var(--color-primary-200);
       ${(props) =>
         props.as === 'h4' &&
         css`
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 600;
           text-align: center;
         `}
