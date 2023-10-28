@@ -34,7 +34,7 @@ const RighContainer = styled.div`
   top: 50%;
   right: 20rem;
   transform: transale(0, -50%);
-  background-color: var(--color-primary-0);
+  background-color: var(--color-secoundary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,11 +55,13 @@ const StyledIconRight = styled(HiOutlinePlay)`
   font-size: 40px;
   cursor: pointer;
   z-index: 7000000;
-  color: var(--color-white-900);
+  color: var(--color-white);
 `
 const StyledIconCross = styled(HiOutlineXMark)`
   font-size: 20px;
   cursor: pointer;
+  color: var(--color-white);
+
   z-index: 7000000;
   .something {
     z-index: 500000;
@@ -71,7 +73,7 @@ const StyledSpan = styled.span`
   padding: 0.5rem;
   right: 100px;
   top: 100px;
-  background-color: var(--color-primary-0);
+  background-color: var(--color-secoundary);
   z-index: 50000000;
   box-shadow: var(--shadow-sm);
 

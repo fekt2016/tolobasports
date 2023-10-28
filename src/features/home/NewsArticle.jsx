@@ -3,9 +3,14 @@ import Heading from '../../ui/Heading'
 import Underline from '../../ui/UnderLine'
 import YoutubeEmbed from '../../ui/YoutubeEmbed'
 import { devicesMax } from '../../styles/BreakPoint'
+import { Link } from 'react-router-dom'
 
 const StyledArticle = styled.div`
   padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
 `
 const StyledNews = styled.div`
   padding: 2rem;
@@ -22,6 +27,10 @@ const StyledVideo = styled.div`
 const StyledP = styled.p`
   hyphens: none;
   text-align: center;
+`
+const StyledLink = styled(Link)`
+  color: blue;
+  text-decoration: underline;
 `
 
 function NewsArticle() {
@@ -78,6 +87,12 @@ function NewsArticle() {
       <StyledVideo>
         <YoutubeEmbed embedId="R4WnMNK6zQ0" />
       </StyledVideo>
+      <div>
+        <span>news Article:</span>
+        <StyledLink to="https://ghanaweb.mobi/ghanaian-entrepreneur-musah-toloba-recognized-for-sports-initiatives-and-receives-collaboration-offer-from-turcaf-president/">
+          Collaboration Offer from Turcaf President
+        </StyledLink>
+      </div>
     </StyledArticle>
   )
 }

@@ -33,7 +33,9 @@ const StyledP = styled.p`
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-
+  line-height: 1.3;
+  padding: 2rem;
+  color: var(--color-white);
   @media ${devicesMax.lg} {
     font-size: 2.5rem;
     text-align: center;
