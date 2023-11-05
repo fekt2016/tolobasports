@@ -243,8 +243,8 @@ function AboutDetail() {
               <Img src="../../../staff1.jpeg" alt="pc17" />
             </StyledPer>
             <TextBox>
-              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-              <StyledSpan>international</StyledSpan>
+              <StyledSpan>Mr. Mohamed Abib Tchabagna </StyledSpan>
+              <StyledSpan>international scout</StyledSpan>
             </TextBox>
           </StyledBox>
           <StyledBox>
@@ -252,44 +252,18 @@ function AboutDetail() {
               <Img src="../../../staff2.jpeg" alt="pc18" />
             </StyledPer>
             <TextBox>
-              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-              <StyledSpan>international</StyledSpan>
+              <StyledSpan>Mr Bismark Arjani</StyledSpan>
+              <StyledSpan>Vice President</StyledSpan>
             </TextBox>
           </StyledBox>
-          <StyledBox>
-            <StyledPer>
-              <Img src="../../../staff3.jpeg" alt="pc22" />
-            </StyledPer>
-            <TextBox>
-              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-              <StyledSpan>international</StyledSpan>
-            </TextBox>
-          </StyledBox>
-          <StyledBox>
-            <StyledPer>
-              <Img src="../../../staff4.jpeg" alt="pc21" />
-            </StyledPer>
-            <TextBox>
-              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-              <StyledSpan>international</StyledSpan>
-            </TextBox>
-          </StyledBox>
-          <StyledBox>
-            <StyledPer>
-              <Img src="../../../staff6.jpeg" alt="pc21" />
-            </StyledPer>
-            <TextBox>
-              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-              <StyledSpan>international</StyledSpan>
-            </TextBox>
-          </StyledBox>
+
           <StyledBox>
             <StyledPer>
               <Img src="../../../staff7.jpeg" alt="pc21" />
             </StyledPer>
             <TextBox>
               <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-              <StyledSpan>international</StyledSpan>
+              <StyledSpan>President</StyledSpan>
             </TextBox>
           </StyledBox>
           <StyledBox>
@@ -297,8 +271,8 @@ function AboutDetail() {
               <Img src="../../../staff8.jpeg" alt="pc21" />
             </StyledPer>
             <TextBox>
-              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-              <StyledSpan>international</StyledSpan>
+              <StyledSpan>binti MD Deni/ismaliah </StyledSpan>
+              <StyledSpan>International public relations</StyledSpan>
             </TextBox>
           </StyledBox>
         </Team>
