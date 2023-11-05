@@ -5,6 +5,7 @@ import { devicesMax } from '../styles/BreakPoint'
 const StyledSection = styled.section`
 margin-bottom: 8rem;
 
+
 @media ${devicesMax.md}{
   margin-bottom: 4rem;
 }

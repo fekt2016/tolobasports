@@ -39,12 +39,8 @@ const Img = styled.img`
 `
 const StyledP = styled.p`
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: justify;
-
-  @media ${devicesMax.dm} {
-    font-size: 1.2rem;
-  }
 `
 
 const StyledCheck = styled.div`

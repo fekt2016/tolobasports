@@ -32,7 +32,7 @@ function Footer() {
     <StyledFooter>
       <StyledTop>
         <div>
-          <Img src="../../public/logo2.jpeg" alt="logo2" />
+          <Img src="../../logo2.jpeg" alt="logo2" />
         </div>
         <div>
           <p>

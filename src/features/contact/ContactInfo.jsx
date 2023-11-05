@@ -63,7 +63,7 @@ const IconBox = styled.div`
   align-items: center;
 `
 const Icons = styled(HiOutlineIdentification)`
-  color: var(--color-white-900);
+  color: var(--color-secoundary);
   font-size: 4rem;
 `
 const H3 = styled.h3`

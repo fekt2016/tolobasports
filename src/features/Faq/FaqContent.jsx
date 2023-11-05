@@ -9,7 +9,6 @@ import { useState } from 'react'
 
 const FaqDetail = styled.div`
   padding: 2rem;
-  color: var(--color-white);
 `
 const ContentBox = styled.div`
   padding: 4rem;
@@ -21,6 +20,7 @@ const StyleQues = styled.div`
   padding: 1rem;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  color: var(--color-white);
 `
 const AnsBox = styled.div`
   padding: 2rem;
@@ -40,7 +40,7 @@ const StyledP = styled.p`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  fill: var(--color-primary-0);
+  color: var(--color-secoundary);
 `
 
 function FaqContent() {

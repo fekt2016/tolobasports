@@ -34,10 +34,6 @@ const VideoContent = styled.div`
 const P = styled.p`
   font-size: 1.6rem;
   margin-bottom: 1rem;
-
-  /* @media ${devicesMax.sm} {
-    font-size: 1.2rem;
-  } */
 `
 
 function ConsultContent() {

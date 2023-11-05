@@ -13,8 +13,6 @@ const StyledPart = styled.div`
   align-items: center;
   gap: 10px;
 
-  /* background-color: aliceblue; */
-
   @media ${devicesMax.lg} {
     flex-direction: column;
   }
@@ -157,7 +155,7 @@ function PartContent() {
               landscape and create opportunities for aspiring talents.
             </StyledItem>
             <StyledItem>
-              <Strong>Join Us in Shaping Football&apos;s Future: </Strong>{' '}
+              <Strong>Join Us in Shaping Football&apos;s Future: </Strong>
               Toloba Sports Consult is your partner in shaping the future of
               football. Whether you are a passionate individual, a proprietor,
               or an organization, together we can build a brighter future for
