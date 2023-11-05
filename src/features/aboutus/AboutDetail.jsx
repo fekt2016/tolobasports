@@ -65,8 +65,10 @@ const Image = styled.div`
 const ContentDetail = styled.div`
   width: 65%;
   margin: 0 auto;
-
   height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
   @media ${devicesMax.lg} {
     width: 100%;
@@ -90,11 +92,6 @@ const Detail = styled.div`
   @media ${devicesMax.sm} {
     padding: 2rem;
   }
-`
-const H6 = styled.h6`
-  margin-bottom: 2rem;
-  font-size: 1.6rem;
-  text-align: center;
 `
 
 const Team = styled.div`
@@ -185,7 +182,7 @@ function AboutDetail() {
               <Heading as="h1">About Toloba Sports Consult</Heading>
               <StyledP>
                 <Strong>Toloba Sports Consult: </Strong> is a beacon of
-                opportunity for aspiring football talents across the globe. Our
+                opportunity for aspiring foo tball talents across the globe. Our
                 unwavering commitment to nurturing the stars of tomorrow is
                 matched only by our passion for the beautiful game.
               </StyledP>
