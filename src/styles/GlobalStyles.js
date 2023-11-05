@@ -51,8 +51,8 @@ const GlobalStyles = createGlobalStyle`:root {
 html {
   font-size: 62.5%;
 
-  @media ${devicesMax.md}{
-    font-size: 55%;
+  @media ${devicesMax.lg}{
+    font-size: 50%;
   }
 }
 body {

@@ -12,6 +12,7 @@ const ScoutContent = styled.div`
   justify-content: space-around;
   gap: 20px;
   padding: 0 8rem;
+  margin-bottom: 4rem;
 
   @media ${devicesMax.md} {
     flex-direction: column;
@@ -25,9 +26,14 @@ const ScoutDetail = styled.div`
 const ScoutText = styled.div`
   flex: 1;
   border: 1px solid var(--color-primary-0);
-  border-top: 5px solid var(--color-black-900);
+  border-top: 5px solid var(--color-secoundary);
   padding: 4rem;
   color: var(--color-grey-500);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media ${devicesMax.md} {
     padding: 1.5rem;
@@ -35,11 +41,12 @@ const ScoutText = styled.div`
 `
 const Img = styled.img`
   width: 100%;
-  height: 310px;
+  /* height: 310px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `
 const StyledP = styled.p`
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: justify;
 `
 
@@ -79,6 +86,9 @@ const VideoContent = styled.div`
     padding: 2rem;
   }
 `
+const Strong = styled.strong`
+  color: var(--color-secoundary);
+`
 function Scout() {
   return (
     <>
@@ -93,18 +103,63 @@ function Scout() {
           </ScoutDetail>
           <ScoutText>
             <StyledP>
-              Our scouting process happens once a year by UEFA Certified coaches
-              at our football academies. Shortlisted students will be given an
-              opportunity to be trained and mentored at our European centres of
-              expertise for a short-term program in FC Metz, France or Deutsches
-              Fussball Internat (DFI), Germany. Selected students from this
-              short-term program will then have an opportunity to be mentored at
-              FC Metz, France or Deutsches Fussball Internat (DFI), Germany for
-              a long-term program. Those who have not qualified for our
-              short-term or long-term programs will be trained at our academies
-              and will get an opportunity to get scouted for our next season.
+              <Strong>Our Scouting Process: </Strong>
+              At Toloba Sports Consult, we believe in a holistic approach to
+              scouting and nurturing football talent. Our annual scouting
+              process is executed by UEFA Certified coaches, ensuring that the
+              selection of promising football talents is carried out with the
+              highest standards of expertise. This year, we&apos;ve taken our
+              scouting process to new heights by forming strategic partnerships
+              with professional scouts hailing from Portugal, Spain, and Turkey.
+              These scouts bring a wealth of experience and possess vital
+              connections with top European clubs. Their expertise and networks
+              are invaluable, significantly expanding the horizons for young
+              talents who aspire to make a mark in the world of football.
             </StyledP>
           </ScoutText>
+        </ScoutContent>
+        <ScoutContent>
+          <ScoutText>
+            <StyledP>
+              <Strong>Twice a Year Scouting: </Strong>
+              We are proud to announce that these scouts from Portugal, Spain,
+              and Turkey will visit twice a year. This means that aspiring
+              football talents have not just one but two opportunities to
+              showcase their skills and take a step closer to their dreams.
+            </StyledP>
+          </ScoutText>
+          <ScoutDetail>
+            <Img src="../../../pc30.jpg" alt="pc30" />
+          </ScoutDetail>
+        </ScoutContent>
+        <ScoutContent>
+          <ScoutDetail>
+            <Img src="../../../pc30.jpg" alt="pc30" />
+          </ScoutDetail>
+          <ScoutText>
+            <StyledP>
+              <Strong>A World of Opportunity: </Strong>
+              Toloba Sports Consult&apos;s global perspective ensures that
+              talent knows no borders. With scouts from Portugal, Spain, and
+              Turkey on board, we are committed to reaching talent across
+              diverse geographies. Our mission is to unearth hidden gems
+              worldwide, offering them the opportunity of a lifetime.
+            </StyledP>
+          </ScoutText>
+        </ScoutContent>
+        <ScoutContent>
+          <ScoutText>
+            <StyledP>
+              <Strong> Join Us in the Pursuit of Excellence: </Strong>
+              If you&apos;re passionate about football and aspire to be a part
+              of the next generation of football stars, Toloba Sports Consult is
+              your platform for growth and opportunity. Join us as we explore,
+              train, and mentor the future football legends.
+            </StyledP>
+          </ScoutText>
+          <ScoutDetail>
+            <Img src="../../../pc30.jpg" alt="pc30" />
+          </ScoutDetail>
         </ScoutContent>
       </Section>
       <StyledCheck>
