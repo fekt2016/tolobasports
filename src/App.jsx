@@ -1,3 +1,5 @@
+import { QueryClient, QueryClientProvider } from 'react-query'
+
 import GlobalStyles from './styles/GlobalStyles'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
@@ -18,9 +20,17 @@ import Blog from './pages/Blog'
 import Programmes from './pages/Programmes'
 import Trainer from './pages/Trainer'
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 0,
+    },
+  },
+})
+
 function App() {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <GlobalStyles />
       <BrowserRouter>
         <Routes>
@@ -42,23 +52,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <ToastContainer />
-      {/* <Toaster
-        position="top-center"
-        gutter={12}
-        containerStyle={{ margin: '8px' }}
-        toastOptions={{
-          success: {
-            duration: 3000,
-          },
-          style: {
-            fontSize: '16px',
-            maxWidth: '500px',
-            backgroundColor: 'var(--color-grey-0)',
-            color: 'var(--color-grey-700)',
-          },
-        }}
-      /> */}
-    </>
+    </QueryClientProvider>
   )
 }
 

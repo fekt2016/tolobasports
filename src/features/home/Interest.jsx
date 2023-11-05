@@ -42,14 +42,14 @@ const StyledBody = styled.div`
 `
 
 const StyledCard = styled.figure`
-  height: 30rem;
+  height: 25rem;
 
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 110%;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 1s;
 
   &:hover {
     background-size: 110%;
@@ -70,11 +70,17 @@ const StyledCard = styled.figure`
     props.pics === 'aboutus' &&
     css`
       background-image: url('../../../musah.jpeg');
+      /* @media ${devicesMax.md} {
+        background-image: url('../../../musah-small.jpg');
+      } */
     `}
   ${(props) =>
     props.pics === 'residential' &&
     css`
       background-image: url('../../../musah2.jpeg');
+      /* @media ${devicesMax.md} {
+        background-image: url('../../../musah2-small.jpg');
+      } */
     `}
   ${(props) =>
     props.pics === 'euro' &&

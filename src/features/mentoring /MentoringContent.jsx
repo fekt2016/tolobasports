@@ -18,6 +18,10 @@ const StyledContent = styled.div`
   }
 `
 const StyledText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   flex: 1;
 
@@ -46,12 +50,14 @@ function MentoringContent() {
       <Header images="mentor" />
       <Section>
         <Row>
-          <Heading as="h2">MENTORING</Heading>
+          <Heading as="h2">
+            Toloba Sports Consult: Nurturing Excellence Through Mentorship
+          </Heading>
           <Underline />
         </Row>
         <StyledContent>
           <StyledText>
-            <P>
+            {/* <P>
               The right mentoring programs have been known to help young
               student-athletes&apos; mature at both mental as well as physical
               level. This maturity certainly changes the way the
@@ -62,6 +68,13 @@ function MentoringContent() {
               takes to be the best in the crowd. We mentor every student-athlete
               enrolled with us to work towards their unique goals with their
               strengths and help them eliminate their areas of weaknesses.
+            </P> */}
+            <P>
+              <strong>At Toloba Sports Consult</strong>, we understand the
+              transformative power of the right mentoring programs for young
+              student-athletes. The journey of growth extends beyond the
+              physical realm, and it&apos;s our mission to guide them towards
+              maturity in both their mental and physical aspects.
             </P>
           </StyledText>
           <ImgBox>
@@ -74,25 +87,33 @@ function MentoringContent() {
             <Img src="../../../pc16.jpg" alt="pc16" />
           </ImgBox>
           <StyledText>
-            <P>
+            {/* <P>
               Our mentoring programs help coaches as well and offer them an
               opportunity to work as a mentor to the student-athletes’ football
               journey. As a mentor, they can inspire the student–athlete to be a
               great sports person as well as a responsible member of the
               community. Together we work towards achieving your goals and help
               you reach your supreme potential!
+            </P> */}
+            <Heading>Mentoring for Holistic Development</Heading>
+            <P>
+              Our mentoring programs at Toloba Sports Consult go beyond teaching
+              football techniques; they instill qualities that shape
+              student-athletes into well-rounded individuals. We believe that
+              true excellence involves not only excelling on the field but also
+              adopting the right attitude, work ethic, and mannerisms in life.
             </P>
           </StyledText>
         </StyledContent>
       </Section>
-      <Section>
+      {/* <Section>
         <Row>
           <Heading>PLAYERS MENTORING BY ERIC BENNY SPORTS MANAGEMENT</Heading>
           <Underline />
 
           <div>SLIDER</div>
         </Row>
-      </Section>
+      </Section> */}
       <Section>
         <Row>
           <Heading>GET MONTORED</Heading>

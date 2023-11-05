@@ -45,13 +45,11 @@ const TextBox = styled.div`
 const StyledList = styled.ul``
 const StyledItem = styled.li`
   color: var(--color-white);
-  padding: 1rem;
+  padding: 6rem;
+
   border: 1px solid var(--color-grey-300);
   &:not(:last-child) {
     margin-bottom: 2rem;
-  }
-  @media ${devicesMax.dm} {
-    font-size: 1.2rem;
   }
 `
 const PartnerTran = keyframes`
@@ -89,10 +87,9 @@ const ImgScroll = styled.img`
   width: 200px;
   height: 15rem;
 `
-const P = styled.p`
-  @media ${devicesMax.dm} {
-    font-size: 1.2rem;
-  }
+const P = styled.p``
+const Strong = styled.strong`
+  color: var(--color-secoundary);
 `
 
 function PartContent() {
@@ -109,13 +106,12 @@ function PartContent() {
           </ContentBox>
           <ContentBox type="border">
             <P>
-              Eric Benny Sports Management (EBSM) is in the business of
-              Consulting, Scouting and Mentoring of potential footballers so as
-              to create an educated race of footballers and/or careers around
-              football. We are building the biggest football academy Partner
-              Network and welcome individuals, proprietors and organizations who
-              have a prior experience in corporate environment and passion
-              towards sports to join us in our vision.
+              <Strong>Toloba Sports Consult:</Strong>
+              We are on a mission to transform the landscape of football through
+              our multifaceted approach that encompasses Consulting, Scouting,
+              and Mentoring. Our vision is to create a new generation of
+              educated and skilled footballers while nurturing careers around
+              the sport.
             </P>
           </ContentBox>
         </StyledPart>
@@ -128,31 +124,45 @@ function PartContent() {
         <TextBox>
           <StyledList>
             <StyledItem>
-              Eric Benny Sports Management is in a strategic partnership with
-              premium European football centres of expertise Deutsches Fußball
-              Internat (DFI) Germany and FC Metz France
+              <Strong>Unlocking Opportunities Through Consulting:</Strong> Our
+              consulting services are designed to guide and empower individuals,
+              schools, universities, football associations, and football clubs
+              to achieve their football-related goals. With a wealth of
+              experience and expertise, we provide tailored solutions to address
+              your unique aspirations in the world of football.
             </StyledItem>
             <StyledItem>
-              We invite partners from all over the country to identify and
-              recruit the best football mentors and coaches and guide them to
-              run Eric Benny Football Academies as per the guidelines of EBSM
+              <Strong>Scouting for Talent Across Continents: </Strong> Toloba
+              Sports Consult is not bound by borders; our scouting network spans
+              across continents, seeking out promising football talent. Our
+              dedicated scouts and experts tirelessly identify potential
+              football stars and offer them the opportunity of a lifetime to
+              showcase their skills and embark on a journey towards excellence.
             </StyledItem>
             <StyledItem>
-              Our regional partners can market and sell learning & development
-              products of Eric Benny Sports Management
+              <Strong>Mentoring for Holistic Growth:</Strong> Mentorship is at
+              the core of what we do. We believe that true success in football
+              is not just about physical prowess but also about mental and
+              emotional maturity. Our mentors guide student-athletes towards
+              growth at both mental and physical levels, ensuring they approach
+              their work, attitude, and life with excellence.
             </StyledItem>
             <StyledItem>
-              An opportunity to provide a pathway for Indian Footballers to get
-              mentored and trained by our UEFA certified coaches. EBSM regional
-              partners can also scout for budding footballers from Eric Benny
-              Football Academies and other sources, to get mentored by our
-              European football centres of expertise Deutsches Fußball Internat
-              (DFI) Germany and FC Metz (France)
+              <Strong>Building the Biggest Football: </Strong> Academy Partner
+              Network As we envision the future of football, we are constructing
+              the largest football academy Partner Network. We welcome
+              individuals, proprietors, and organizations who share our passion
+              for sports and bring prior experience in the corporate
+              environment. Join us in this journey to transform the football
+              landscape and create opportunities for aspiring talents.
             </StyledItem>
             <StyledItem>
-              Through Eric Benny Football Academies, regional partners can
-              provide an opportunity for young footballers to get coaching at
-              both grass - root level and at the professional level.
+              <Strong>Join Us in Shaping Football&apos;s Future: </Strong>{' '}
+              Toloba Sports Consult is your partner in shaping the future of
+              football. Whether you are a passionate individual, a proprietor,
+              or an organization, together we can build a brighter future for
+              football and empower the next generation of footballers and
+              careers around the sport.
             </StyledItem>
           </StyledList>
         </TextBox>

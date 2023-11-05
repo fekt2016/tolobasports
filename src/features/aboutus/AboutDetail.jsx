@@ -13,15 +13,9 @@ const AboutContent = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 80rem;
+
   padding: 3rem;
 
-  @media ${devicesMax.xl} {
-    height: 84rem;
-  }
-  @media ${devicesMax.lg} {
-    height: 88%;
-  }
   @media ${devicesMax.md} {
     padding: 2rem;
   }
@@ -32,12 +26,9 @@ const AboutContent = styled.div`
 const ImgBox = styled.div`
   display: flex;
   justify-content: space-around;
+  margin-bottom: 6rem;
 
-  @media ${devicesMax.lg} {
-    margin-bottom: 2rem;
-  }
   @media ${devicesMax.md} {
-    margin-bottom: 1rem;
     flex-direction: column;
   }
 `
@@ -58,10 +49,12 @@ const Image = styled.div`
   flex-basis: 40%;
   border: 2px solid var(--color-primary-0);
   height: 25rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 
   @media ${devicesMax.md} {
-    width: 100%;
-    height: 40rem;
+    width: 90%;
+    height: 50rem;
   }
 `
 // const Img = styled.img`
@@ -72,7 +65,6 @@ const Image = styled.div`
 const ContentDetail = styled.div`
   width: 65%;
   margin: 0 auto;
-  position: relative;
 
   height: 100%;
 
@@ -86,18 +78,13 @@ const Detail = styled.div`
   width: 100%;
   background-color: var(--color-white-900);
   margin: 0 auto;
-  position: absolute;
-  top: -50px;
   padding: 6rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media ${devicesMax.lg} {
-    position: relative;
-  }
+
   @media ${devicesMax.md} {
-    top: 0;
     padding: 4rem;
   }
   @media ${devicesMax.sm} {
@@ -108,35 +95,14 @@ const H6 = styled.h6`
   margin-bottom: 2rem;
   font-size: 1.6rem;
   text-align: center;
-
-  @media ${devicesMax.md} {
-    font-size: 1.4rem;
-  }
-  @media ${devicesMax.sm} {
-    font-size: 1.2rem;
-  }
 `
 
 const Team = styled.div`
-  width: 80%;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  align-items: center;
   justify-content: center;
-
-  gap: 20px;
+  flex-wrap: wrap;
   padding: 2rem;
-
-  @media ${devicesMax.lg} {
-    gap: 10px;
-  }
-  @media ${devicesMax.md} {
-    grid-template-columns: repeat(2, 24rem);
-  }
-  @media ${devicesMax.sm} {
-    grid-template-columns: 1fr;
-  }
 `
 const StyledPer = styled.div`
   height: 20rem;
@@ -148,7 +114,7 @@ const StyledPer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 `
 const CareerDetail = styled.div`
@@ -163,32 +129,33 @@ const CareerDetail = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media ${devicesMax.md} {
+    padding: 2rem;
+  }
 `
 const StyledP = styled.p`
-  text-align: center;
-  font-size: 1.6rem;
-
-  @media ${devicesMax.md} {
-    font-size: 1.2rem;
-  }
-`
-const CareerP = styled.p`
-  text-align: center;
   font-size: 1.6rem;
   margin-bottom: 1rem;
-
-  @media ${devicesMax.md} {
-    font-size: 1.1rem;
-  }
+`
+const CareerP = styled.p`
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 `
 const StyledBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 `
 const StyledSpan = styled.span`
   text-transform: capitalize;
+`
+const TextBox = styled.div`
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 function AboutDetail() {
   return (
@@ -209,34 +176,46 @@ function AboutDetail() {
           </ImgBox>
           <ContentDetail>
             <Detail>
-              <H6>About TOLOBA SC</H6>
+              <H6>About Toloba Sports Consult</H6>
+              <StyledP>
+                <strong>Toloba Sports Consult:</strong> is a beacon of
+                opportunity for aspiring football talents across the globe. Our
+                unwavering commitment to nurturing the stars of tomorrow is
+                matched only by our passion for the beautiful game.
+              </StyledP>
 
               <StyledP>
-                <strong>Toloba Sports Consult Limited</strong>, established in
-                2018 by Musah Toloba, represents the embodiment of a vision
-                fueled by passion. Musah Toloba, a dynamic young Ghanaian, has
-                dedicated himself to uncovering the latent football talent that
-                often goes unnoticed. His mission is driven by the belief that
-                within the hearts of young athletes lie the dreams of becoming
-                professional footballers.
+                <strong>Our Scouting Process :</strong> At Toloba Sports
+                Consult, we believe in a holistic approach to scouting and
+                nurturing football talent. Our annual scouting process is
+                executed by UEFA Certified coaches, ensuring that the selection
+                of promising football talents is carried out with the highest
+                standards of expertise.
+              </StyledP>
+
+              <StyledP>
+                This year, we&apos;ve taken our scouting process to new heights
+                by forming strategic partnerships with professional scouts
+                hailing from Portugal, Spain, and Turkey. These scouts bring a
+                wealth of experience and possess vital connections with top
+                European clubs. Their expertise and networks are invaluable,
+                significantly expanding the horizons for young talents who
+                aspire to make a mark in the world of football.
               </StyledP>
               <StyledP>
-                <strong>Our Belief:</strong> At the heart of our endeavor lies
-                an unshakable belief in the art of scouting and the profound
-                impact of adept player management. We recognize that nurturing
-                raw talent is more than just a process; it&apos;s a journey.
-                It&apos;s about identifying potential, providing the right
-                guidance, and instilling the discipline and skills necessary to
-                transform young athletes into professionals.
+                <strong>Twice a Year Scouting: </strong> We are proud to
+                announce that these scouts from Portugal, Spain, and Turkey will
+                visit twice a year. This means that aspiring football talents
+                have not just one but two opportunities to showcase their skills
+                and take a step closer to their dreams.
               </StyledP>
               <StyledP>
-                <strong>Our Mission:</strong> At Toloba Sports Consult Limited,
-                our mission is clear and unwavering - to serve as a catalyst,
-                igniting transformative shifts within the realm of football
-                education. We strive to create an environment where raw
-                potential flourishes into professional excellence. Our mission
-                extends beyond just nurturing talent; it&apos;s about instilling
-                values, dedication, and the resilience needed for success.
+                <strong>A World of Opportunity</strong> Toloba Sports
+                Consult&apos;s global perspective ensures that talent knows no
+                borders. With scouts from Portugal, Spain, and Turkey on board,
+                we are committed to reaching talent across diverse geographies.
+                Our mission is to unearth hidden gems worldwide, offering them
+                the opportunity of a lifetime.
               </StyledP>
             </Detail>
           </ContentDetail>
@@ -260,43 +239,64 @@ function AboutDetail() {
             <StyledPer>
               <Img src="../../../staff1.jpeg" alt="pc17" />
             </StyledPer>
-            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-            <StyledSpan>international</StyledSpan>
+            <TextBox>
+              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+              <StyledSpan>international</StyledSpan>
+            </TextBox>
           </StyledBox>
           <StyledBox>
             <StyledPer>
               <Img src="../../../staff2.jpeg" alt="pc18" />
             </StyledPer>
-            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-            <StyledSpan>international</StyledSpan>
+            <TextBox>
+              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+              <StyledSpan>international</StyledSpan>
+            </TextBox>
           </StyledBox>
           <StyledBox>
             <StyledPer>
               <Img src="../../../staff3.jpeg" alt="pc22" />
             </StyledPer>
-            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-            <StyledSpan>international</StyledSpan>
+            <TextBox>
+              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+              <StyledSpan>international</StyledSpan>
+            </TextBox>
           </StyledBox>
           <StyledBox>
             <StyledPer>
               <Img src="../../../staff4.jpeg" alt="pc21" />
             </StyledPer>
-            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-            <StyledSpan>international</StyledSpan>
+            <TextBox>
+              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+              <StyledSpan>international</StyledSpan>
+            </TextBox>
           </StyledBox>
           <StyledBox>
             <StyledPer>
-              <Img src="../../../staff4.jpeg" alt="pc21" />
+              <Img src="../../../staff6.jpeg" alt="pc21" />
             </StyledPer>
-            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-            <StyledSpan>international</StyledSpan>
+            <TextBox>
+              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+              <StyledSpan>international</StyledSpan>
+            </TextBox>
           </StyledBox>
           <StyledBox>
             <StyledPer>
-              <Img src="../../../staff4.jpeg" alt="pc21" />
+              <Img src="../../../staff7.jpeg" alt="pc21" />
             </StyledPer>
-            <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-            <StyledSpan>international</StyledSpan>
+            <TextBox>
+              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+              <StyledSpan>international</StyledSpan>
+            </TextBox>
+          </StyledBox>
+          <StyledBox>
+            <StyledPer>
+              <Img src="../../../staff8.jpeg" alt="pc21" />
+            </StyledPer>
+            <TextBox>
+              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
+              <StyledSpan>international</StyledSpan>
+            </TextBox>
           </StyledBox>
         </Team>
       </Section>
@@ -307,7 +307,7 @@ function AboutDetail() {
         </Row>
         <CareerDetail>
           <Row>
-            <Heading as="h2">JOIN TOLOBA SPORTS MANAGEMENT</Heading>
+            <Heading as="h2"> Join Us in the Pursuit of Excellence</Heading>
           </Row>
           <CareerP>
             The measure of our success is reflected in the achievements of the
@@ -318,10 +318,12 @@ function AboutDetail() {
             testaments to our commitment to nurturing the stars of tomorrow
           </CareerP>
           <CareerP>
-            We are looking for Partners, Sales and Marketing Staff, Coaches
-            across the country. If interested, kindly send us an email at
+            If you&apos;re passionate about football and aspire to be a part of
+            the next generation of football stars, Toloba Sports Consult is your
+            platform for growth and opportunity. Join us as we explore, train,
+            and mentor the future football legends.
           </CareerP>
-          <CareerP>Mtoloba@yahoo.com</CareerP>
+          <CareerP>Mtoloba@tolobasports.com</CareerP>
           <NavLink to="/contact">
             <Button>CONTACT US</Button>
           </NavLink>
@@ -332,3 +334,9 @@ function AboutDetail() {
 }
 
 export default AboutDetail
+
+{
+  /* <p>About Toloba Sports Consult Toloba Sports Consult is a beacon of opportunity for aspiring football talents across the globe. Our unwavering commitment to nurturing the stars of tomorrow is matched only by our passion for the beautiful game. Our Scouting Process At Toloba Sports Consult, we believe in a holistic approach to scouting and nurturing football talent. Our annual scouting process is executed by UEFA Certified coaches, ensuring that the selection of promising football talents is carried out with the highest standards of expertise. This year, we ve taken our scouting process to new heights by forming strategic partnerships with professional scouts hailing from Portugal, Spain, and Turkey. These scouts bring a wealth of experience and possess vital connections with top European clubs. Their expertise and networks are invaluable, significantly expanding the horizons for young talents who aspire to make a mark in the world of football.
+Twice a Year Scouting. We are proud to announce that these scouts from Portugal, Spain, and Turkey will visit twice a year. This means that aspiring football talents have not just one but two opportunities to showcase their skills and take a step closer to their dreams. A World of Opportunity. Toloba Sports Consult's global perspective ensures that talent knows no borders. With scouts from Portugal, Spain, and Turkey on board, we are committed to reaching talent across diverse geographies. Our mission is to unearth hidden gems worldwide, offering them the opportunity of a lifetime.
+Join Us in the Pursuit of Excellence If youre passionate about football and aspire to be a part of the next generation of football stars, Toloba Sports Consult is your platform for growth and opportunity. Join us as we explore, train, and mentor the future football legends.</p> */
+}
