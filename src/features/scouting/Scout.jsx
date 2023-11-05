@@ -94,7 +94,7 @@ function Scout() {
     <>
       <Section>
         <Row>
-          <Heading as="h2">Scouting</Heading>
+          <Heading as="h1">Scouting</Heading>
           <UnderLine />
         </Row>
         <ScoutContent>

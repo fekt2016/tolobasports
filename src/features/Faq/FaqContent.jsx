@@ -50,7 +50,7 @@ function FaqContent() {
       <Header images="faq" />
       <Section>
         <Row>
-          <Heading>FAQ&apos;s</Heading>
+          <Heading as="h1">FAQ&apos;s</Heading>
         </Row>
         <FaqDetail>
           <ContentBox>

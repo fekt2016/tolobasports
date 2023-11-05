@@ -160,12 +160,15 @@ const TextBox = styled.div`
   justify-content: center;
   align-items: center;
 `
+const Strong = styled.strong`
+  color: var(--color-secoundary);
+`
 function AboutDetail() {
   return (
     <>
       <Section type="about">
         <Row>
-          <Heading as="h2">About Us</Heading>
+          <Heading as="h1">About Us</Heading>
           <Underline />
         </Row>
         <AboutContent>
@@ -179,16 +182,16 @@ function AboutDetail() {
           </ImgBox>
           <ContentDetail>
             <Detail>
-              <H6>About Toloba Sports Consult</H6>
+              <Heading as="h1">About Toloba Sports Consult</Heading>
               <StyledP>
-                <strong>Toloba Sports Consult:</strong> is a beacon of
+                <Strong>Toloba Sports Consult: </Strong> is a beacon of
                 opportunity for aspiring football talents across the globe. Our
                 unwavering commitment to nurturing the stars of tomorrow is
                 matched only by our passion for the beautiful game.
               </StyledP>
 
               <StyledP>
-                <strong>Our Scouting Process :</strong> At Toloba Sports
+                <Strong>Our Scouting Process: </Strong> At Toloba Sports
                 Consult, we believe in a holistic approach to scouting and
                 nurturing football talent. Our annual scouting process is
                 executed by UEFA Certified coaches, ensuring that the selection
@@ -206,14 +209,14 @@ function AboutDetail() {
                 aspire to make a mark in the world of football.
               </StyledP>
               <StyledP>
-                <strong>Twice a Year Scouting: </strong> We are proud to
+                <Strong>Twice a Year Scouting: </Strong> We are proud to
                 announce that these scouts from Portugal, Spain, and Turkey will
                 visit twice a year. This means that aspiring football talents
                 have not just one but two opportunities to showcase their skills
                 and take a step closer to their dreams.
               </StyledP>
               <StyledP>
-                <strong>A World of Opportunity</strong> Toloba Sports
+                <Strong>A World of Opportunity: </Strong> Toloba Sports
                 Consult&apos;s global perspective ensures that talent knows no
                 borders. With scouts from Portugal, Spain, and Turkey on board,
                 we are committed to reaching talent across diverse geographies.

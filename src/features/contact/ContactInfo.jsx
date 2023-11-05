@@ -79,7 +79,7 @@ function ContactInfo() {
   return (
     <Section type="contact">
       <Row>
-        <Heading as="h2">Contact Information</Heading>
+        <Heading as="h1">Contact Information</Heading>
         <UnderLine />
       </Row>
 

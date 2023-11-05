@@ -42,7 +42,7 @@ function ConsultContent() {
       <Header images="mentor"></Header>
       <Section>
         <Row>
-          <Heading as="h2">CONSULT WITH US</Heading>
+          <Heading as="h1">CONSULT WITH US</Heading>
           <Underline />
         </Row>
         <ContentDetail>
