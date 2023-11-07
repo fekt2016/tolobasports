@@ -7,8 +7,7 @@ const StyledLogo = styled.div`
   height: inherit;
   align-items: center;
   position: absolute;
-  /* top: 1rem; */
-  /* left: 50px; */
+
   ${(props) =>
     props.position === 'header' &&
     css`

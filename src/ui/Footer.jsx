@@ -9,7 +9,7 @@ const StyledFooter = styled.footer`
   border-top: 1px solid var(--color-primary-0);
 `
 const Img = styled.img`
-  height: 10rem;
+  height: 12rem;
 `
 const StyledTop = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ function Footer() {
     <StyledFooter>
       <StyledTop>
         <div>
-          <Img src="../../logo2.jpeg" alt="logo2" />
+          <Img src="../../public/mloogo.png" alt="logo2" />
         </div>
         <div>
           <p>
