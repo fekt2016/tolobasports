@@ -65,6 +65,7 @@ function GalleryContent() {
           <Img
             key={image.alt}
             src={image.src}
+            loading="lazy"
             onClick={() => handleClick(image, index)}
           />
         ))}

@@ -52,7 +52,7 @@ html {
   font-size: 62.5%;
 
   @media ${devicesMax.lg}{
-    font-size: 50%;
+    font-size: 60%;
   }
 }
 body {

@@ -2,11 +2,12 @@
 import styled from 'styled-components'
 import { getOptions } from './getData'
 import { devicesMax } from '../../styles/BreakPoint'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const DetailImgBox = styled.div`
   flex-basis: 40%;
 `
-const DetailImg = styled.img`
+const DetailImg = styled(LazyLoadImage)`
   width: 100%;
   height: 100%;
 `
@@ -47,7 +48,7 @@ function GetDetail() {
         return (
           <StyledGetDetail key={option.index}>
             <DetailImgBox>
-              <DetailImg src={option.image} alt="pc16" />
+              <DetailImg src={option.image} alt="pc16" loading="lazy" />
             </DetailImgBox>
 
             <TextDetail>

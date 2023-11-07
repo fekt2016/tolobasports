@@ -26,7 +26,7 @@ const StyledVideo = styled.div`
 `
 const StyledP = styled.p`
   hyphens: none;
-  text-align: center;
+  text-align: justify;
 `
 const StyledLink = styled(Link)`
   color: blue;

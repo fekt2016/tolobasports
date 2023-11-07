@@ -1,7 +1,8 @@
 /* eslint react/prop-types: 0 */
 import styled from 'styled-components'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-const StyledImg = styled.img`
+const StyledImg = styled(LazyLoadImage)`
   height: 100%;
   width: 100%;
 `

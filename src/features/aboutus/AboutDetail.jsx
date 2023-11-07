@@ -170,7 +170,7 @@ function AboutDetail() {
               <Img src="../../../2.png" alt="pc8" />
             </Image>
             <Image>
-              <Img src="../../../musah4.jpeg" />
+              <Img src="../../../musah4.jpeg" loading="lazy" />
             </Image>
           </ImgBox>
           <ContentDetail>
@@ -262,15 +262,6 @@ function AboutDetail() {
             </TextBox>
           </StyledBox>
 
-          <StyledBox>
-            <StyledPer>
-              <Img src="../../../staff7.jpeg" alt="pc21" />
-            </StyledPer>
-            <TextBox>
-              <StyledSpan>Mr. Abibu Mohammed </StyledSpan>
-              <StyledSpan>President</StyledSpan>
-            </TextBox>
-          </StyledBox>
           <StyledBox>
             <StyledPer>
               <Img src="../../../staff8.jpeg" alt="pc21" />

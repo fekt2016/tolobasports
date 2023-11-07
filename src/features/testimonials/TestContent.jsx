@@ -5,6 +5,7 @@ import Heading from '../../ui/Heading'
 import UnderLine from '../../ui/UnderLine'
 import styled from 'styled-components'
 import { devicesMax } from '../../styles/BreakPoint'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const StyledTest = styled.div`
   background-color: var(--color-white);
@@ -14,7 +15,7 @@ const StyledTest = styled.div`
   font-size: 50px;
   padding: 5rem;
   color: var(--color-primary-0);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   @media ${devicesMax.md} {
     padding: 3rem;
     font-size: 40px;
@@ -38,6 +39,9 @@ const ImgBox = styled.div`
   padding: 3rem;
   z-index: -2;
 `
+const Img = styled(LazyLoadImage)`
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+`
 const TextBox = styled.div`
   flex: 4;
   height: 50rem;
@@ -56,7 +60,6 @@ const TextBoxDetail = styled.div`
   flex-direction: column;
   position: absolute;
   padding: 2rem;
-  /* margin-right: 20rem; */
 
   left: -60px;
   background-color: var(--color-white);
@@ -67,6 +70,8 @@ const TextBoxDetail = styled.div`
 `
 const P = styled.p`
   margin-bottom: 2rem;
+  text-align: justify;
+  hyphens: none;
 `
 function TestContent() {
   return (
@@ -82,7 +87,7 @@ function TestContent() {
 
         <TestDetail>
           <ImgBox>
-            <img src="../../../test-1.jpeg" />
+            <Img src="../../../test-1.jpeg" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
@@ -115,7 +120,7 @@ function TestContent() {
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <img src="../../../test-2.jpeg" />
+            <Img src="../../../test-2.jpeg" loading="lazy" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
@@ -154,7 +159,7 @@ function TestContent() {
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <img src="../../../test-3.jpeg" />
+            <Img src="../../../test-3.jpeg" loading="lazy" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
@@ -186,7 +191,7 @@ function TestContent() {
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <img src="../../../test-4.jpeg" />
+            <Img src="../../../test-4.jpeg" loading="lazy" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
@@ -218,7 +223,7 @@ function TestContent() {
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <img src="../../../test-6.jpeg" />
+            <Img src="../../../test-6.jpeg" loading="lazy" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
@@ -250,7 +255,7 @@ function TestContent() {
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <img src="../../../test-7.jpeg" />
+            <Img src="../../../test-7.jpeg" loading="lazy" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>

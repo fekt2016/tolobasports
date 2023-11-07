@@ -5,6 +5,7 @@ import UnderLine from '../../ui/UnderLine'
 import Img from '../../ui/Img'
 import styled, { css, keyframes } from 'styled-components'
 import { devicesMax } from '../../styles/BreakPoint'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const StyledPart = styled.div`
   padding: 2rem 4rem;
@@ -81,7 +82,7 @@ const ImgItem = styled.li`
   height: 15rem;
   width: 350px;
 `
-const ImgScroll = styled.img`
+const ImgScroll = styled(LazyLoadImage)`
   width: 200px;
   height: 15rem;
 `
@@ -100,7 +101,7 @@ function PartContent() {
         </Row>
         <StyledPart>
           <ContentBox>
-            <Img src="../../../pc31.jpg" alt="pc31" />
+            <Img src="../../../pc31.jpg" alt="pc31" loading="lazy" />
           </ContentBox>
           <ContentBox type="border">
             <P>
@@ -169,30 +170,30 @@ function PartContent() {
         <StyledTran>
           <ImgList>
             <ImgItem>
-              <ImgScroll src="../../../com1.png" alt="com1" />
+              <ImgScroll src="../../../com1.png" alt="com1" loading="lazy" />
             </ImgItem>
             <ImgItem>
-              <ImgScroll src="../../../com2.jpeg" alt="com1" />
+              <ImgScroll src="../../../com2.jpeg" alt="com1" loading="lazy" />
             </ImgItem>
             <ImgItem>
-              <ImgScroll src="../../../com3.jpeg" alt="com1" />
+              <ImgScroll src="../../../com3.jpeg" alt="com1" loading="lazy" />
             </ImgItem>
             <ImgItem>
-              <ImgScroll src="../../../com4.png" alt="com1" />
+              <ImgScroll src="../../../com4.png" alt="com1" loading="lazy" />
             </ImgItem>
           </ImgList>
           <ImgList>
             <ImgItem>
-              <ImgScroll src="../../../com1.png" alt="com1" />
+              <ImgScroll src="../../../com1.png" alt="com1" loading="lazy" />
             </ImgItem>
             <ImgItem>
-              <ImgScroll src="../../../com2.jpeg" alt="com1" />
+              <ImgScroll src="../../../com2.jpeg" alt="com1" loading="lazy" />
             </ImgItem>
             <ImgItem>
-              <ImgScroll src="../../../com3.jpeg" alt="com1" />
+              <ImgScroll src="../../../com3.jpeg" alt="com1" loading="lazy" />
             </ImgItem>
             <ImgItem>
-              <ImgScroll src="../../../com4.png" alt="com1" />
+              <ImgScroll src="../../../com4.png" alt="com1" loading="lazy" />
             </ImgItem>
           </ImgList>
         </StyledTran>

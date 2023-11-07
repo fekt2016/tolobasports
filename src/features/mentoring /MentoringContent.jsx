@@ -6,6 +6,7 @@ import Section from '../../ui/Section'
 import Underline from '../../ui/UnderLine'
 import GetMentored from './GetMentored'
 import { devicesMax } from '../../styles/BreakPoint'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const StyledContent = styled.div`
   padding: 4rem;
@@ -39,7 +40,7 @@ const ImgBox = styled.div`
   height: 300px;
   flex: 1;
 `
-const Img = styled.img`
+const Img = styled(LazyLoadImage)`
   width: 100%;
   height: 100%;
 `
@@ -67,13 +68,13 @@ function MentoringContent() {
             </P>
           </StyledText>
           <ImgBox>
-            <Img src="../../../pc15.jpg" alt="pc15" />
+            <Img src="../../../pc15.jpg" alt="pc15" loading="lazy" />
           </ImgBox>
         </StyledContent>
 
         <StyledContent>
           <ImgBox>
-            <Img src="../../../pc16.jpg" alt="pc16" />
+            <Img src="../../../pc16.jpg" alt="pc16" loading="lazy" />
           </ImgBox>
           <StyledText>
             <P>

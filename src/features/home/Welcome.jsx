@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Heading from '../../ui/Heading'
 import { devicesMax } from '../../styles/BreakPoint'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const StyledWel = styled.div`
   color: var(--color-white-900);
@@ -47,7 +48,7 @@ const StyledP = styled.p`
 const ImgBox = styled.div`
   background-color: transparent;
 `
-const Img = styled.img`
+const Img = styled(LazyLoadImage)`
   height: 40rem;
   width: 65rem;
 `
@@ -62,7 +63,7 @@ function Welcome() {
         </StyledP>
       </StyledBox>
       <ImgBox>
-        <Img src="../../../1 NEW.png" alt="tolo" />
+        <Img src="../../../1 NEW.png" alt="tolo" loading="lazy" />
       </ImgBox>
     </StyledWel>
   )

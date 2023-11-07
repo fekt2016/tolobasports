@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import Heading from '../../ui/Heading'
 import { devicesMax } from '../../styles/BreakPoint'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Box = styled.div`
   padding: 4rem;
 `
 
-const Img = styled.img`
+const Img = styled(LazyLoadImage)`
   height: 40rem;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 `
@@ -39,7 +40,7 @@ function BlogContent() {
   return (
     <Box>
       <BoxHeader>
-        <Img src="../../musah11.jpeg" alt="musah 11" />
+        <Img src="../../musah11.jpeg" alt="musah 11" loading="lazy" />
         <BoxHeading>
           <Heading as="h4">
             A Pivotal Meeting in Abu Dhabi: The Tale of Musah Toloba and Daniel

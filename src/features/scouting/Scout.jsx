@@ -6,6 +6,7 @@ import UnderLine from '../../ui/UnderLine'
 import Button from '../../ui/Button'
 import { devicesMax } from '../../styles/BreakPoint'
 import YoutubeEmbed from '../../ui/YoutubeEmbed'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const ScoutContent = styled.div`
   display: flex;
@@ -39,7 +40,7 @@ const ScoutText = styled.div`
     padding: 1.5rem;
   }
 `
-const Img = styled.img`
+const Img = styled(LazyLoadImage)`
   width: 100%;
   /* height: 310px; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -99,7 +100,7 @@ function Scout() {
         </Row>
         <ScoutContent>
           <ScoutDetail>
-            <Img src="../../../pc30.jpg" alt="pc30" />
+            <Img src="../../../pc30.jpg" alt="pc30" loading="lazy" />
           </ScoutDetail>
           <ScoutText>
             <StyledP>
@@ -129,12 +130,12 @@ function Scout() {
             </StyledP>
           </ScoutText>
           <ScoutDetail>
-            <Img src="../../../pc30.jpg" alt="pc30" />
+            <Img src="../../../pc30.jpg" alt="pc30" loading="lazy" />
           </ScoutDetail>
         </ScoutContent>
         <ScoutContent>
           <ScoutDetail>
-            <Img src="../../../pc30.jpg" alt="pc30" />
+            <Img src="../../../pc30.jpg" alt="pc30" loading="lazy" />
           </ScoutDetail>
           <ScoutText>
             <StyledP>
@@ -158,7 +159,7 @@ function Scout() {
             </StyledP>
           </ScoutText>
           <ScoutDetail>
-            <Img src="../../../pc30.jpg" alt="pc30" />
+            <Img src="../../../pc30.jpg" alt="pc30" loading="lazy" />
           </ScoutDetail>
         </ScoutContent>
       </Section>

@@ -1,6 +1,7 @@
 /* eslint react/prop-types: 0*/
 import styled, { css } from 'styled-components'
 import { devicesMax } from '../styles/BreakPoint'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const StyledLogo = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ const StyledLogo = styled.div`
   }
 `
 
-const Img = styled.img`
+const Img = styled(LazyLoadImage)`
   margin: 0 auto;
   ${(props) =>
     props.type === 'small' &&
@@ -42,7 +43,7 @@ const Img = styled.img`
 function Logo({ type, img, position }) {
   return (
     <StyledLogo>
-      <Img src={img} alt="Logo" type={type} postion={position} />
+      <Img src={img} alt="Logo" type={type} postion={position} loading="lazy" />
     </StyledLogo>
   )
 }
