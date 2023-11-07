@@ -6,7 +6,7 @@ import {
 import styled from 'styled-components'
 
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { devicesMax } from '../styles/BreakPoint'
 import Sidebar from './SideBar'
 
@@ -68,11 +68,25 @@ const StyledNavLink = styled(NavLink)`
 `
 
 function NavBar() {
+  const ref = useRef('')
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(function () {
+    function handleClick(e) {
+      if (!ref.current.contains(e.target)) {
+        setIsOpen(false)
+      }
+    }
+
+    document.addEventListener('click', handleClick, true)
+
+    return () => document.removeEventListener('click', handleClick, true)
+  }, [])
+
   return (
     <>
       <Sidebar type={isOpen ? 'open' : ''} setIsOpen={setIsOpen} />
-      <StyledNav>
+      <StyledNav ref={ref}>
         <StyledUl>
           <StyledLi>
             <StyledNavLink to="/">

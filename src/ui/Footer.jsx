@@ -7,10 +7,6 @@ const StyledFooter = styled.footer`
   padding: 2rem;
   font-size: 1.2rem;
   border-top: 1px solid var(--color-primary-0);
-
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
 `
 const Img = styled.img`
   height: 10rem;
@@ -27,6 +23,9 @@ const Powered = styled.div`
   justify-content: center;
   align-items: center;
 `
+const SpanLink = styled.span`
+  color: blue;
+`
 function Footer() {
   return (
     <StyledFooter>
@@ -36,15 +35,17 @@ function Footer() {
         </div>
         <div>
           <p>
-            &#169;Copyright 2019 Toloba sports consults. All rights reserved.
+            &#169;Copyright 2019 Toloba sports consult. All rights reserved.
           </p>
           <SocialIcon />
         </div>
       </StyledTop>
       <Powered>
         <p>
-          Powered by eazword solutions.{' '}
-          <Link to="https://eazworld.com">eazworld.com</Link>
+          Powered by eazword solutions.{'  '}
+          <Link to="https://eazworld.com">
+            <SpanLink>eazworld.com</SpanLink>
+          </Link>
         </p>
       </Powered>
     </StyledFooter>

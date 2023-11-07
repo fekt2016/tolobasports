@@ -19,6 +19,7 @@ import Partners from './pages/Partners'
 import Blog from './pages/Blog'
 import Programmes from './pages/Programmes'
 import Trainer from './pages/Trainer'
+import BlogContent from './features/blog/BlogContent'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -44,6 +45,10 @@ function App() {
             <Route path="mentoring" element={<Mentoring />} />
             <Route path="partners" element={<Partners />} />
             <Route path="blog" element={<Blog />} />
+            <Route
+              path="blog/APivotalMeetinginAbuDhabi"
+              element={<BlogContent />}
+            />
             <Route path="testimonial" element={<Testimonial />} />
             <Route path="image-gallery" element={<Gallery />} />
             <Route path="programmes" element={<Programmes />} />

@@ -3,6 +3,7 @@ import { devicesMax } from '../../styles/BreakPoint'
 import { NavLink } from 'react-router-dom'
 import Button from '../../ui/Button'
 import Underline from '../../ui/UnderLine'
+import Heading from '../../ui/Heading'
 
 const Container = styled.div`
   padding: 4rem;
@@ -17,20 +18,9 @@ const Container = styled.div`
 
 const StyledHeader = styled.div`
   padding-bottom: 4rem;
-`
-
-const Heading = styled.h1`
-  font-size: 3rem;
-  font-weight: 600;
   text-align: center;
-
-  @media ${devicesMax.md} {
-    font-size: 2.5rem;
-  }
-  @media ${devicesMax.sm} {
-    font-size: 2rem;
-  }
 `
+
 const StyledBody = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -120,7 +110,7 @@ function Interest() {
   return (
     <Container>
       <StyledHeader>
-        <Heading as="h2">CHOOSE YOUR INTEREST</Heading>
+        <Heading as="h1">CHOOSE YOUR INTEREST</Heading>
         <Underline />
       </StyledHeader>
       <StyledBody>

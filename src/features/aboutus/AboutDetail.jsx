@@ -57,10 +57,6 @@ const Image = styled.div`
     height: 50rem;
   }
 `
-// const Img = styled.img`
-//   height: 100%;
-//   width: 100%;
-// `
 
 const ContentDetail = styled.div`
   width: 65%;
@@ -238,6 +234,15 @@ function AboutDetail() {
           <Underline />
         </Row>
         <Team>
+          <StyledBox>
+            <StyledPer>
+              <Img src="../../../staff9.jpeg" alt="pc21" />
+            </StyledPer>
+            <TextBox>
+              <StyledSpan>Mr.Musah Toloba </StyledSpan>
+              <StyledSpan>CEO</StyledSpan>
+            </TextBox>
+          </StyledBox>
           <StyledBox>
             <StyledPer>
               <Img src="../../../staff1.jpeg" alt="pc17" />

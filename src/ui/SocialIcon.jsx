@@ -22,14 +22,11 @@ const Img = styled.img`
 function SocialIcon() {
   return (
     <StyledSocial>
-      <StyledLink>
+      <StyledLink to="https://www.facebook.com/profile.php?id=61552980643002&mibextid=gjUFcU">
         <Img src="../../facebook.png" />
       </StyledLink>
-      <StyledLink>
+      <StyledLink to="https://instagram.com/toloba_sports?igshid=MXd0NGphOHNib2ZqYw==">
         <Img src="../../instagram.png" />
-      </StyledLink>
-      <StyledLink>
-        <Img src="../../twitter.png" />
       </StyledLink>
       <StyledLink>
         <Img src="../../youtube.png" />
