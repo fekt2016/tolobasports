@@ -173,8 +173,8 @@ function Scout() {
           <UnderLine />
         </Row>
         <VideoContent>
-          <YoutubeEmbed embedId="c6VYQ90Dgd0" />
-          <YoutubeEmbed embedId="Ph5JpIFKVoE" />
+          <YoutubeEmbed embedId="" />
+          <YoutubeEmbed embedId="" />
         </VideoContent>
       </Section>
     </>

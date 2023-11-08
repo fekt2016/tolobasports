@@ -87,45 +87,24 @@ function TestContent() {
 
         <TestDetail>
           <ImgBox>
-            <Img src="../../../test-1.jpeg" />
+            <Img src="" effect="blur" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
-              <P>
-                Indian Football is still in its Developing phase and footballers
-                from small cities have to struggle hard to be noticed. After
-                being a part of the AIFF elite academy, nothing was planned or
-                certain. During this period I got an opportunity to go to FC
-                Metz thanks to Mr. Eric Benny. Playing at the Ligue 1 club in
-                France was a dream come true. A budding football player
-                couldn&apos;t have asked for a better platform to prove himself
-                at that point in his career. Working with Mr. Eric Benny was a
-                great pleasure. His helpful and polite attitude goes on to show
-                that he is in this business to promote talent and he will go out
-                of his way for doing that. His experience and track record shows
-                his contribution to the games welfare. I am sure there are
-                hundreds who would want to thank him and I would like take this
-                opportunity to express my gratitude on behalf of all such
-                players who got the opportunity to work with him. I wish him the
-                very best for the future and hope he continuous to do good work
-                for a long time so that budding players like me get the
-                opportunity to work with such and experienced and knowledgeable
-                person like him. I sure look forward to work with him again in
-                the future.
-              </P>
-              <h3>Anirudh Thapa</h3>
-              <span>Chennaiyin FC And Indian National Team</span>
+              <P></P>
+              <h3></h3>
+              <span></span>
             </TextBoxDetail>
           </TextBox>
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <Img src="../../../test-2.jpeg" loading="lazy" />
+            <Img src="" effect="blur" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
               <P>
-                EBSM is providing a fantastic infrastructure and coaches in
+                {/* EBSM is providing a fantastic infrastructure and coaches in
                 Germany. The environment in which my boy is getting trained is
                 heaven on earth. Highlight of the training is individual
                 attention given at DFI. My boy went at the age of 12, I was
@@ -151,20 +130,20 @@ function TestContent() {
                 football, the education system in Germany is second to none in
                 the world. I am very sure in coming years Eric is going to make
                 India proud for his great work. Eric & team, keep up your good
-                work. I am confident one day my son will make us all proud.
+                work. I am confident one day my son will make us all proud. */}
               </P>
-              <h3>Balachander Dharmalingam</h3>
+              <h3></h3>
             </TextBoxDetail>
           </TextBox>
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <Img src="../../../test-3.jpeg" loading="lazy" />
+            <Img src="" effect="blur" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
               <P>
-                Indian Football is still in its Developing phase and footballers
+                {/* Indian Football is still in its Developing phase and footballers
                 from small cities have to struggle hard to be noticed. After
                 being a part of the AIFF elite academy, nothing was planned or
                 certain. During this period I got an opportunity to go to FC
@@ -183,20 +162,20 @@ function TestContent() {
                 for a long time so that budding players like me get the
                 opportunity to work with such and experienced and knowledgeable
                 person like him. I sure look forward to work with him again in
-                the future.
+                the future. */}
               </P>
-              <h3>Sarojini Thiru (M/O T.S. Pragithyan)</h3>
+              <h3></h3>
             </TextBoxDetail>
           </TextBox>
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <Img src="../../../test-4.jpeg" loading="lazy" />
+            <Img src="" effect="blur" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
               <P>
-                Indian Football is still in its Developing phase and footballers
+                {/* Indian Football is still in its Developing phase and footballers
                 from small cities have to struggle hard to be noticed. After
                 being a part of the AIFF elite academy, nothing was planned or
                 certain. During this period I got an opportunity to go to FC
@@ -215,20 +194,20 @@ function TestContent() {
                 for a long time so that budding players like me get the
                 opportunity to work with such and experienced and knowledgeable
                 person like him. I sure look forward to work with him again in
-                the future.
+                the future. */}
               </P>
-              <h3>Ravi Varanasi</h3>
+              <h3></h3>
             </TextBoxDetail>
           </TextBox>
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <Img src="../../../test-6.jpeg" loading="lazy" />
+            <Img src="" effect="blur" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
               <P>
-                Indian Football is still in its Developing phase and footballers
+                {/* Indian Football is still in its Developing phase and footballers
                 from small cities have to struggle hard to be noticed. After
                 being a part of the AIFF elite academy, nothing was planned or
                 certain. During this period I got an opportunity to go to FC
@@ -247,20 +226,20 @@ function TestContent() {
                 for a long time so that budding players like me get the
                 opportunity to work with such and experienced and knowledgeable
                 person like him. I sure look forward to work with him again in
-                the future.
+                the future. */}
               </P>
-              <h3>Aravind Ganapathi Raju</h3>
+              <h3></h3>
             </TextBoxDetail>
           </TextBox>
         </TestDetail>
         <TestDetail>
           <ImgBox>
-            <Img src="../../../test-7.jpeg" loading="lazy" />
+            <Img src="" effect="blur" />
           </ImgBox>
           <TextBox>
             <TextBoxDetail>
               <P>
-                Indian Football is still in its Developing phase and footballers
+                {/* Indian Football is still in its Developing phase and footballers
                 from small cities have to struggle hard to be noticed. After
                 being a part of the AIFF elite academy, nothing was planned or
                 certain. During this period I got an opportunity to go to FC
@@ -279,9 +258,9 @@ function TestContent() {
                 for a long time so that budding players like me get the
                 opportunity to work with such and experienced and knowledgeable
                 person like him. I sure look forward to work with him again in
-                the future.
+                the future. */}
               </P>
-              <h3>M S Reddy</h3>
+              <h3></h3>
             </TextBoxDetail>
           </TextBox>
         </TestDetail>

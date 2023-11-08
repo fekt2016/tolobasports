@@ -109,6 +109,11 @@ const StyledPer = styled.div`
   align-items: center;
   width: 80%;
   margin: 0 auto;
+
+  @media ${devicesMax.sm} {
+    height: 30rem;
+    width: 90%;
+  }
 `
 const CareerDetail = styled.div`
   width: 80%;
@@ -224,7 +229,7 @@ function AboutDetail() {
             <YoutubeEmbed embedId="R4WnMNK6zQ0" />
           </Image>
           <Image>
-            <YoutubeEmbed embedId="R4WnMNK6zQ0" />
+            <YoutubeEmbed embedId="" />
           </Image>
         </VideoContent>
       </Section>

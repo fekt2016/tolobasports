@@ -4,6 +4,7 @@ import { HiXMark } from 'react-icons/hi2'
 import { createPortal } from 'react-dom'
 import { cloneElement, createContext, useContext, useState } from 'react'
 import { useOutSideClick } from '../hooks/useOutsideClick'
+import { devicesMax } from '../styles/BreakPoint'
 const StyledModal = styled.div`
   position: fixed;
   top: 50%;
@@ -14,6 +15,9 @@ const StyledModal = styled.div`
   box-shadow: var(--shadow-lg);
   padding: 3.2rem 4rem;
   transition: all 0.5s;
+  @media ${devicesMax.md} {
+    width: 90%;
+  }
 `
 
 const Overlay = styled.div`

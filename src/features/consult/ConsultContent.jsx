@@ -47,7 +47,7 @@ function ConsultContent() {
         </Row>
         <ContentDetail>
           <VideoContent>
-            <YoutubeEmbed embedId="c6VYQ90Dgd0" />
+            <YoutubeEmbed embedId="" />
           </VideoContent>
           <TextDetail>
             <P>
@@ -80,12 +80,12 @@ function ConsultContent() {
             </P>
           </TextDetail>
           <VideoContent>
-            <YoutubeEmbed embedId="c6VYQ90Dgd0" />
+            <YoutubeEmbed embedId="" />
           </VideoContent>
         </ContentDetail>
         <ContentDetail>
           <VideoContent>
-            <YoutubeEmbed embedId="c6VYQ90Dgd0" />
+            <YoutubeEmbed embedId="" />
           </VideoContent>
           <TextDetail>
             <P>
@@ -116,12 +116,12 @@ function ConsultContent() {
             </P>
           </TextDetail>
           <VideoContent>
-            <YoutubeEmbed embedId="c6VYQ90Dgd0" />
+            <YoutubeEmbed embedId="" />
           </VideoContent>
         </ContentDetail>
         <ContentDetail>
           <VideoContent>
-            <YoutubeEmbed embedId="c6VYQ90Dgd0" />
+            <YoutubeEmbed embedId="" />
           </VideoContent>
           <TextDetail>
             <P>
