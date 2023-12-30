@@ -25,7 +25,6 @@ function NewsLetter() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    console.log(email, fullName)
 
     subscribers({ email, fullName })
   }

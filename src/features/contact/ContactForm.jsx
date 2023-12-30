@@ -44,8 +44,7 @@ function ContactForm() {
         import.meta.env.VITE_YOUR_PUBLIC_KEY,
       )
       .then(
-        (result) => {
-          console.log(result)
+        () => {
           notify()
         },
         (error) => {

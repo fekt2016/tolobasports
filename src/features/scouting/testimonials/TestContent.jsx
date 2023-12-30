@@ -1,10 +1,10 @@
-import Section from '../../ui/Section'
-import Header from '../../ui/Header'
-import Row from '../../ui/Row'
-import Heading from '../../ui/Heading'
-import UnderLine from '../../ui/UnderLine'
+import Section from '../../../ui/Section'
+import Header from '../../../ui/Header'
+import Row from '../../../ui/Row'
+import Heading from '../../../ui/Heading'
+import UnderLine from '../../../ui/UnderLine'
 import styled from 'styled-components'
-import { devicesMax } from '../../styles/BreakPoint'
+import { devicesMax } from '../../../styles/BreakPoint'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const StyledTest = styled.div`
